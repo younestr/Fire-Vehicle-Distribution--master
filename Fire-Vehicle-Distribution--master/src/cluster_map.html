@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_36c0be6904d1aef4b3be62d038b56bb1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_36c0be6904d1aef4b3be62d038b56bb1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_36c0be6904d1aef4b3be62d038b56bb1 = L.map(
+                "map_36c0be6904d1aef4b3be62d038b56bb1",
+                {
+                    center: [33.5653660603819, -7.653567337663801],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_21067dcca42c49cfd74ddf857bfa2945 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_21067dcca42c49cfd74ddf857bfa2945.addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var marker_cluster_cf50fe06dd5c41e66bec817cd264980a = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_38505bb37b3a8bcc850f4bf72aeec16d = L.marker(
+                [33.59359940939919, -7.62697675236806],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_8d4abd6778ede8959fe211920a094c70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_496951b38c5262dbd168823fcf8e57f1 = $(`<div id="html_496951b38c5262dbd168823fcf8e57f1" style="width: 100.0%; height: 100.0%;">Rue Abou Ahmed Ghazali, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Ancienne Medina المدينة القديمة, Arrondissement de Sidi Belyout مقاطعة سيدي بليوط, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20070, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_8d4abd6778ede8959fe211920a094c70.setContent(html_496951b38c5262dbd168823fcf8e57f1);
+            
+        
+
+        marker_38505bb37b3a8bcc850f4bf72aeec16d.bindPopup(popup_8d4abd6778ede8959fe211920a094c70)
+        ;
+
+        
+    
+    
+            var marker_95211d84ae2b83469f4df04f45ac9c86 = L.marker(
+                [33.594017144481796, -7.632493187551575],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_d90c8789789c7fcd002eadc9287cce80 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d11bfd5e9e2afcc43ea398234fddb00 = $(`<div id="html_3d11bfd5e9e2afcc43ea398234fddb00" style="width: 100.0%; height: 100.0%;">Rue Commissaire Ldeuil, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Sour Jdid السور الجديد, Arrondissement de Sidi Belyout مقاطعة سيدي بليوط, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20012, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_d90c8789789c7fcd002eadc9287cce80.setContent(html_3d11bfd5e9e2afcc43ea398234fddb00);
+            
+        
+
+        marker_95211d84ae2b83469f4df04f45ac9c86.bindPopup(popup_d90c8789789c7fcd002eadc9287cce80)
+        ;
+
+        
+    
+    
+            var marker_9d48e6e8fd878b273d92f2bcdd2acedb = L.marker(
+                [33.58942194730789, -7.639012610950272],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_fefe8f667995f686811d3c2acdd5cc16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9436caea0261d7f2ad1b7a13607e552b = $(`<div id="html_9436caea0261d7f2ad1b7a13607e552b" style="width: 100.0%; height: 100.0%;">Siège Crédit du Maroc, Boulevard d'Anfa شارع أنفا, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Racine راسين, Arrondissement d'Anfa مقاطعة أنفا, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 75015, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_fefe8f667995f686811d3c2acdd5cc16.setContent(html_9436caea0261d7f2ad1b7a13607e552b);
+            
+        
+
+        marker_9d48e6e8fd878b273d92f2bcdd2acedb.bindPopup(popup_fefe8f667995f686811d3c2acdd5cc16)
+        ;
+
+        
+    
+    
+            var marker_fc7aeed40640b42f10e6711dd2301a21 = L.marker(
+                [33.578141789249536, -7.643526057918602],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_d934f14868cdd61d239ccd78a14ea493 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_896f700bf66c992020ef4164b0b59dad = $(`<div id="html_896f700bf66c992020ef4164b0b59dad" style="width: 100.0%; height: 100.0%;">Rue Abou Abbas al-Azfi, Cité Plateau, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement de Maârif مقاطعة المعاريف, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20025, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_d934f14868cdd61d239ccd78a14ea493.setContent(html_896f700bf66c992020ef4164b0b59dad);
+            
+        
+
+        marker_fc7aeed40640b42f10e6711dd2301a21.bindPopup(popup_d934f14868cdd61d239ccd78a14ea493)
+        ;
+
+        
+    
+    
+            var marker_0d98e804ff311bd9eeebe78ceb14ab15 = L.marker(
+                [33.563935048381616, -7.635000658089536],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_febec560c5e6f14b7d077d9a27fa59e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c0cea4140312a5cafcdb8dac4829ed3 = $(`<div id="html_5c0cea4140312a5cafcdb8dac4829ed3" style="width: 100.0%; height: 100.0%;">Rue des Papillons, Cité Plateau, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement de Maârif مقاطعة المعاريف, Préfecture d'arrondissements de Casablanca-Anfa عمالة مقاطعات الدار البيضاء أنفا, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20410, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_febec560c5e6f14b7d077d9a27fa59e7.setContent(html_5c0cea4140312a5cafcdb8dac4829ed3);
+            
+        
+
+        marker_0d98e804ff311bd9eeebe78ceb14ab15.bindPopup(popup_febec560c5e6f14b7d077d9a27fa59e7)
+        ;
+
+        
+    
+    
+            var marker_8b7568ecaccd1d3132c975538fc0694e = L.marker(
+                [33.5823197974999, -7.671609727943762],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_75bd611d6fd96c8f911348123cc9528f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3405d66ed3bd9cdb681fe12882f11a3e = $(`<div id="html_3405d66ed3bd9cdb681fe12882f11a3e" style="width: 100.0%; height: 100.0%;">Rue Détroit Panama, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Aïn Diab عين الذئاب, Arrondissement d'Anfa مقاطعة أنفا, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20204, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_75bd611d6fd96c8f911348123cc9528f.setContent(html_3405d66ed3bd9cdb681fe12882f11a3e);
+            
+        
+
+        marker_8b7568ecaccd1d3132c975538fc0694e.bindPopup(popup_75bd611d6fd96c8f911348123cc9528f)
+        ;
+
+        
+    
+    
+            var marker_feb32b1967d73529233ca6ca1004a1bb = L.marker(
+                [33.578141789249536, -7.693675468677816],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_2fc5e69bacd3c9ba39a8e5a3b5a81010 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbf3aaf7483763fe0c7339ca5619801a = $(`<div id="html_cbf3aaf7483763fe0c7339ca5619801a" style="width: 100.0%; height: 100.0%;">Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Aïn Diab عين الذئاب, Arrondissement d'Anfa مقاطعة أنفا, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20204, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_2fc5e69bacd3c9ba39a8e5a3b5a81010.setContent(html_cbf3aaf7483763fe0c7339ca5619801a);
+            
+        
+
+        marker_feb32b1967d73529233ca6ca1004a1bb.bindPopup(popup_2fc5e69bacd3c9ba39a8e5a3b5a81010)
+        ;
+
+        
+    
+    
+            var marker_51353c1a5c0639ea386c97d0eeb76417 = L.marker(
+                [33.5756348872146, -7.691669492247447],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_0fa3fe8e821039469350dbe708cf7ff1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83d21784db81bfc4951c8c12604d135c = $(`<div id="html_83d21784db81bfc4951c8c12604d135c" style="width: 100.0%; height: 100.0%;">Rue Méditerranée, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Aïn Diab عين الذئاب, Arrondissement d'Anfa مقاطعة أنفا, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20204, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_0fa3fe8e821039469350dbe708cf7ff1.setContent(html_83d21784db81bfc4951c8c12604d135c);
+            
+        
+
+        marker_51353c1a5c0639ea386c97d0eeb76417.bindPopup(popup_0fa3fe8e821039469350dbe708cf7ff1)
+        ;
+
+        
+    
+    
+            var marker_b704b0e7c9f19dd5f07062c2f06ce199 = L.marker(
+                [33.57271007614996, -7.684147080633566],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_3d89a4fa595d65b2cae1215f994e545a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0cea6bce50b903c6e4f8ed219be2632 = $(`<div id="html_a0cea6bce50b903c6e4f8ed219be2632" style="width: 100.0%; height: 100.0%;">Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement de Hay Hassani مقاطعة الحي الحسني, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20204, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_3d89a4fa595d65b2cae1215f994e545a.setContent(html_a0cea6bce50b903c6e4f8ed219be2632);
+            
+        
+
+        marker_b704b0e7c9f19dd5f07062c2f06ce199.bindPopup(popup_3d89a4fa595d65b2cae1215f994e545a)
+        ;
+
+        
+    
+    
+            var marker_d749a75a9e843ba3319ae8e2f496ee2c = L.marker(
+                [33.55808453443336, -7.665591798652656],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_4bcc52d12bf91dc3bc25a112db9f865b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f923dd2c7ca3a163f4de1a80a22c252 = $(`<div id="html_5f923dd2c7ca3a163f4de1a80a22c252" style="width: 100.0%; height: 100.0%;">Anfa Aéropostale, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement de Hay Hassani مقاطعة الحي الحسني, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20036, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_4bcc52d12bf91dc3bc25a112db9f865b.setContent(html_5f923dd2c7ca3a163f4de1a80a22c252);
+            
+        
+
+        marker_d749a75a9e843ba3319ae8e2f496ee2c.bindPopup(popup_4bcc52d12bf91dc3bc25a112db9f865b)
+        ;
+
+        
+    
+    
+            var marker_c24f09733410fe206e820d8c00123f0c = L.marker(
+                [33.56017404919702, -7.680135127772829],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_ce706dcf4e2d548f119d98f6419f28cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1767a8ed78ce426e76bd55dbde772f30 = $(`<div id="html_1767a8ed78ce426e76bd55dbde772f30" style="width: 100.0%; height: 100.0%;">Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement de Hay Hassani مقاطعة الحي الحسني, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20202, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_ce706dcf4e2d548f119d98f6419f28cd.setContent(html_1767a8ed78ce426e76bd55dbde772f30);
+            
+        
+
+        marker_c24f09733410fe206e820d8c00123f0c.bindPopup(popup_ce706dcf4e2d548f119d98f6419f28cd)
+        ;
+
+        
+    
+    
+            var marker_e1697f94d4e3b05231d11c6c66ec8a43 = L.marker(
+                [33.570203016362875, -7.672111222051353],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_632bbe0f0786aa9c6b565ee7cc801b70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a927aa5b52311547449225e53b30965e = $(`<div id="html_a927aa5b52311547449225e53b30965e" style="width: 100.0%; height: 100.0%;">Boulevard Ibn Sina شارع ابن سينا, Anfa Cité de l'Air, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement de Hay Hassani مقاطعة الحي الحسني, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20204, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_632bbe0f0786aa9c6b565ee7cc801b70.setContent(html_a927aa5b52311547449225e53b30965e);
+            
+        
+
+        marker_e1697f94d4e3b05231d11c6c66ec8a43.bindPopup(popup_632bbe0f0786aa9c6b565ee7cc801b70)
+        ;
+
+        
+    
+    
+            var marker_0414f465470c7c24d4266385642fac95 = L.marker(
+                [33.56894945916749, -7.690165009924672],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_168c30b59d9a68bd2f0490dff1eb89ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3287488f72d83c43185982d9c5af6424 = $(`<div id="html_3287488f72d83c43185982d9c5af6424" style="width: 100.0%; height: 100.0%;">Lotissement Yaksour, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement de Hay Hassani مقاطعة الحي الحسني, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20202, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_168c30b59d9a68bd2f0490dff1eb89ad.setContent(html_3287488f72d83c43185982d9c5af6424);
+            
+        
+
+        marker_0414f465470c7c24d4266385642fac95.bindPopup(popup_168c30b59d9a68bd2f0490dff1eb89ad)
+        ;
+
+        
+    
+    
+            var marker_1cc56a70a794295acf6d9b285128ae8a = L.marker(
+                [33.541366596668716, -7.645030540241378],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_64d43319e83eac97c29ed110b87ba583 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa20fb053e6e8f544c24a28da3e1dad1 = $(`<div id="html_fa20fb053e6e8f544c24a28da3e1dad1" style="width: 100.0%; height: 100.0%;">Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement d'Aïn Chock مقاطعة عين الشق, Préfecture d'arrondissement d'Aïn Chock عمالة مقاطعة عين الشق, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20001, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_64d43319e83eac97c29ed110b87ba583.setContent(html_fa20fb053e6e8f544c24a28da3e1dad1);
+            
+        
+
+        marker_1cc56a70a794295acf6d9b285128ae8a.bindPopup(popup_64d43319e83eac97c29ed110b87ba583)
+        ;
+
+        
+    
+    
+            var marker_5a315fbe3e6f2438b5d0022b990bc807 = L.marker(
+                [33.53551455428848, -7.652051457747669],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_44290e9436d9d009d662003cc975ca5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e9fdaa33a1e5ec2e3989d34e61f79f3 = $(`<div id="html_9e9fdaa33a1e5ec2e3989d34e61f79f3" style="width: 100.0%; height: 100.0%;">Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement d'Aïn Chock مقاطعة عين الشق, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20190, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_44290e9436d9d009d662003cc975ca5d.setContent(html_9e9fdaa33a1e5ec2e3989d34e61f79f3);
+            
+        
+
+        marker_5a315fbe3e6f2438b5d0022b990bc807.bindPopup(popup_44290e9436d9d009d662003cc975ca5d)
+        ;
+
+        
+    
+    
+            var marker_afd3699cfc15a41bff7b4493660a6818 = L.marker(
+                [33.53551455428848, -7.666093292760247],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_f4b4d4da8443a9d9c48e0935fb615c7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99b49142b725a2582e52fdb05889a160 = $(`<div id="html_99b49142b725a2582e52fdb05889a160" style="width: 100.0%; height: 100.0%;">RN1, Al Quds ⵍⵇⵓⴷⵙ القدس, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement de Hay Hassani مقاطعة الحي الحسني, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20232, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_f4b4d4da8443a9d9c48e0935fb615c7b.setContent(html_99b49142b725a2582e52fdb05889a160);
+            
+        
+
+        marker_afd3699cfc15a41bff7b4493660a6818.bindPopup(popup_f4b4d4da8443a9d9c48e0935fb615c7b)
+        ;
+
+        
+    
+    
+            var marker_bf694ada74566da2290ad7d2779b6b24 = L.marker(
+                [33.54471044299741, -7.661078351684328],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_35aab452c506e497756a05fa1eb1e0ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18dfcdfbee46655ee361208ff2b0ed6c = $(`<div id="html_18dfcdfbee46655ee361208ff2b0ed6c" style="width: 100.0%; height: 100.0%;">Boulevard de Bouskoura, Anfa Université, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement de Hay Hassani مقاطعة الحي الحسني, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20190, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_35aab452c506e497756a05fa1eb1e0ae.setContent(html_18dfcdfbee46655ee361208ff2b0ed6c);
+            
+        
+
+        marker_bf694ada74566da2290ad7d2779b6b24.bindPopup(popup_35aab452c506e497756a05fa1eb1e0ae)
+        ;
+
+        
+    
+    
+            var marker_3bafd7d0f82ac4a45a6b1f358a0b3f6b = L.marker(
+                [33.54596435201484, -7.653555940070444],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_b6f4068cb2d71d8c10b7d4828660a48a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39e50e3ce413c5c3d7fc129e4e8d9ed3 = $(`<div id="html_39e50e3ce413c5c3d7fc129e4e8d9ed3" style="width: 100.0%; height: 100.0%;">Institut Supérieur d'Etudes Maritimes, Route d'El Jadida, Anfa Université, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement de Hay Hassani مقاطعة الحي الحسني, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20001, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_b6f4068cb2d71d8c10b7d4828660a48a.setContent(html_39e50e3ce413c5c3d7fc129e4e8d9ed3);
+            
+        
+
+        marker_3bafd7d0f82ac4a45a6b1f358a0b3f6b.bindPopup(popup_b6f4068cb2d71d8c10b7d4828660a48a)
+        ;
+
+        
+    
+    
+            var marker_644fedcdff7e3f08e4cbde65aea5957e = L.marker(
+                [33.54596435201484, -7.647538010779339],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_57ce84fbf4e2e9fb315aa85edf6071ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56dd7e66953a1a9956e92613e8339d7a = $(`<div id="html_56dd7e66953a1a9956e92613e8339d7a" style="width: 100.0%; height: 100.0%;">Route de l'Oasis, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement de Hay Hassani مقاطعة الحي الحسني, Préfecture d'arrondissement de Hay Hassani عمالة مقاطعة الحي الحسني, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20001, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_57ce84fbf4e2e9fb315aa85edf6071ee.setContent(html_56dd7e66953a1a9956e92613e8339d7a);
+            
+        
+
+        marker_644fedcdff7e3f08e4cbde65aea5957e.bindPopup(popup_57ce84fbf4e2e9fb315aa85edf6071ee)
+        ;
+
+        
+    
+    
+            var marker_713f22747feab8d9f4c1728445098090 = L.marker(
+                [33.54512841469149, -7.623466293614917],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_e24289bd47c32c44678e5222ca698dec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f00629d14a974fe751f251b93ab65a2 = $(`<div id="html_2f00629d14a974fe751f251b93ab65a2" style="width: 100.0%; height: 100.0%;">Vermont ⵯⵉⵔⵎoⵏ حي فيرمونت, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement d'Aïn Chock مقاطعة عين الشق, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20076, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_e24289bd47c32c44678e5222ca698dec.setContent(html_2f00629d14a974fe751f251b93ab65a2);
+            
+        
+
+        marker_713f22747feab8d9f4c1728445098090.bindPopup(popup_e24289bd47c32c44678e5222ca698dec)
+        ;
+
+        
+    
+    
+            var marker_6899f1626a5179fcc703a7c7d7fad5ec = L.marker(
+                [33.58148421203108, -7.623967787722508],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_8f34677833c4ba14da4b7c2da5bdcccc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_927acf78a21515ff646ace6e39f307e4 = $(`<div id="html_927acf78a21515ff646ace6e39f307e4" style="width: 100.0%; height: 100.0%;">CIMR, Boulevard Abdelmoumen, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement de Maârif مقاطعة المعاريف, Préfecture d'arrondissements de Casablanca-Anfa عمالة مقاطعات الدار البيضاء أنفا, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20340, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_8f34677833c4ba14da4b7c2da5bdcccc.setContent(html_927acf78a21515ff646ace6e39f307e4);
+            
+        
+
+        marker_6899f1626a5179fcc703a7c7d7fad5ec.bindPopup(popup_8f34677833c4ba14da4b7c2da5bdcccc)
+        ;
+
+        
+    
+    
+            var marker_b9c0c60d1d4e3034c240de1408ce8b32 = L.marker(
+                [33.57730616332809, -7.630487211121205],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_7f7a44ea4a18613c43d53daa71425c48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5da4cb15d959f75b4b4cc7a4ab13f5a2 = $(`<div id="html_5da4cb15d959f75b4b4cc7a4ab13f5a2" style="width: 100.0%; height: 100.0%;">Rue 82 زنقة, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement de Maârif مقاطعة المعاريف, Préfecture d'arrondissements de Casablanca-Anfa عمالة مقاطعات الدار البيضاء أنفا, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20340, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_7f7a44ea4a18613c43d53daa71425c48.setContent(html_5da4cb15d959f75b4b4cc7a4ab13f5a2);
+            
+        
+
+        marker_b9c0c60d1d4e3034c240de1408ce8b32.bindPopup(popup_7f7a44ea4a18613c43d53daa71425c48)
+        ;
+
+        
+    
+    
+            var marker_c74d7ab3729daf5cf0a70121dfe95e9b = L.marker(
+                [33.57229223790809, -7.635502152197128],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_748ca1d407e19ed9ab2ae0953724c28a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_099717180e7be24fbdcb5b37935892e0 = $(`<div id="html_099717180e7be24fbdcb5b37935892e0" style="width: 100.0%; height: 100.0%;">Boulevard Stendhal, Cité Plateau, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement de Maârif مقاطعة المعاريف, Préfecture d'arrondissements de Casablanca-Anfa عمالة مقاطعات الدار البيضاء أنفا, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20390, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_748ca1d407e19ed9ab2ae0953724c28a.setContent(html_099717180e7be24fbdcb5b37935892e0);
+            
+        
+
+        marker_c74d7ab3729daf5cf0a70121dfe95e9b.bindPopup(popup_748ca1d407e19ed9ab2ae0953724c28a)
+        ;
+
+        
+    
+    
+            var marker_6807c5e799a58686a64ead337ecdbb62 = L.marker(
+                [33.569785165986744, -7.652051457747669],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_a2d62fba8dd26e80ba36440476803fbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b602dec44f8c29370102a619af48ae97 = $(`<div id="html_b602dec44f8c29370102a619af48ae97" style="width: 100.0%; height: 100.0%;">Boulevard Yacoub El Mansour شارع يعقوب المنصور, CIL سيل, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement de Hay Hassani مقاطعة الحي الحسني, Préfecture d'arrondissement de Hay Hassani عمالة مقاطعة الحي الحسني, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20203, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_a2d62fba8dd26e80ba36440476803fbe.setContent(html_b602dec44f8c29370102a619af48ae97);
+            
+        
+
+        marker_6807c5e799a58686a64ead337ecdbb62.bindPopup(popup_a2d62fba8dd26e80ba36440476803fbe)
+        ;
+
+        
+    
+    
+            var marker_47cac13f612e0811e15095cf11954b47 = L.marker(
+                [33.58607983198424, -7.674117198481722],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_e11e5f19f57fcaad061c83607f23c267 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71d3037b714ed2c6c5da72d75144eefc = $(`<div id="html_71d3037b714ed2c6c5da72d75144eefc" style="width: 100.0%; height: 100.0%;">Rue Detriot De'ormuz, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Aïn Diab عين الذئاب, Arrondissement d'Anfa مقاطعة أنفا, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20180, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_e11e5f19f57fcaad061c83607f23c267.setContent(html_71d3037b714ed2c6c5da72d75144eefc);
+            
+        
+
+        marker_47cac13f612e0811e15095cf11954b47.bindPopup(popup_e11e5f19f57fcaad061c83607f23c267)
+        ;
+
+        
+    
+    
+            var marker_4e0f69c36c048e7bc524fd08f5a43778 = L.marker(
+                [33.59318167229353, -7.659573869361551],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_1738e1cfe4027a0da1914264ba2c7272 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97cd225fc92fd1e0907906c64269e752 = $(`<div id="html_97cd225fc92fd1e0907906c64269e752" style="width: 100.0%; height: 100.0%;">Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Anfa ⴰⵏⴼⴰ أنفا, Arrondissement d'Anfa مقاطعة أنفا, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20170, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_1738e1cfe4027a0da1914264ba2c7272.setContent(html_97cd225fc92fd1e0907906c64269e752);
+            
+        
+
+        marker_4e0f69c36c048e7bc524fd08f5a43778.bindPopup(popup_1738e1cfe4027a0da1914264ba2c7272)
+        ;
+
+        
+    
+    
+            var marker_0438322cd9fa1468f361e0bdafa3d9c9 = L.marker(
+                [33.59819438403789, -7.649042493102114],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_b4480cf07f9c5c514a149a8a90a6fe12 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_505e6281e52968afd462563a1699246f = $(`<div id="html_505e6281e52968afd462563a1699246f" style="width: 100.0%; height: 100.0%;">Avenue de Nice شارع نيس, Lahjajma لهجاجمة, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Bourgogne بورغون, Arrondissement d'Anfa مقاطعة أنفا, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 12500, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_b4480cf07f9c5c514a149a8a90a6fe12.setContent(html_505e6281e52968afd462563a1699246f);
+            
+        
+
+        marker_0438322cd9fa1468f361e0bdafa3d9c9.bindPopup(popup_b4480cf07f9c5c514a149a8a90a6fe12)
+        ;
+
+        
+    
+    
+            var marker_aa7c3d5dd4b223c33d493893fb9471de = L.marker(
+                [33.600700630659816, -7.640015599165456],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_1c7eee38422b7cce3393b783aaf6eec3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2d7b8c8812fe6be616f434106e0af91 = $(`<div id="html_c2d7b8c8812fe6be616f434106e0af91" style="width: 100.0%; height: 100.0%;">Rue 5 زنقة, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Bourgogne بورغون, Arrondissement d'Anfa مقاطعة أنفا, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 10011, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_1c7eee38422b7cce3393b783aaf6eec3.setContent(html_c2d7b8c8812fe6be616f434106e0af91);
+            
+        
+
+        marker_aa7c3d5dd4b223c33d493893fb9471de.bindPopup(popup_1c7eee38422b7cce3393b783aaf6eec3)
+        ;
+
+        
+    
+    
+            var marker_6da8c07586613a495808cd5012369272 = L.marker(
+                [33.59527033759125, -7.657066398823589],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_2147a3a82ca27df271fdf205f7da8a5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15be95219392b679839af0e4e65aba33 = $(`<div id="html_15be95219392b679839af0e4e65aba33" style="width: 100.0%; height: 100.0%;">Rue Moulay Bousselham, Lahjajma لهجاجمة, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Anfa ⴰⵏⴼⴰ أنفا, Arrondissement d'Anfa مقاطعة أنفا, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20170, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_2147a3a82ca27df271fdf205f7da8a5c.setContent(html_15be95219392b679839af0e4e65aba33);
+            
+        
+
+        marker_6da8c07586613a495808cd5012369272.bindPopup(popup_2147a3a82ca27df271fdf205f7da8a5c)
+        ;
+
+        
+    
+    
+            var marker_5b6fc3d41f5599f646ca425701ff4865 = L.marker(
+                [33.59443487754135, -7.664588810437472],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_4804f0a28028eea2f2b51820f05320ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12ca395f850cfe6337f511c965eae907 = $(`<div id="html_12ca395f850cfe6337f511c965eae907" style="width: 100.0%; height: 100.0%;">Rue de l'Epi, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Anfa ⴰⵏⴼⴰ أنفا, Arrondissement d'Anfa مقاطعة أنفا, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20170, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_4804f0a28028eea2f2b51820f05320ae.setContent(html_12ca395f850cfe6337f511c965eae907);
+            
+        
+
+        marker_5b6fc3d41f5599f646ca425701ff4865.bindPopup(popup_4804f0a28028eea2f2b51820f05320ae)
+        ;
+
+        
+    
+    
+            var marker_e90a78d5f9b5754a36e1a6c7f47836da = L.marker(
+                [33.58190200577685, -7.686153057063935],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_b634fa255b80cb487f647740693c7b6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4fb6c1d1b4ffc1835348b4213ac445bc = $(`<div id="html_4fb6c1d1b4ffc1835348b4213ac445bc" style="width: 100.0%; height: 100.0%;">Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Aïn Diab عين الذئاب, Arrondissement d'Anfa مقاطعة أنفا, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20052, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_b634fa255b80cb487f647740693c7b6c.setContent(html_4fb6c1d1b4ffc1835348b4213ac445bc);
+            
+        
+
+        marker_e90a78d5f9b5754a36e1a6c7f47836da.bindPopup(popup_b634fa255b80cb487f647740693c7b6c)
+        ;
+
+        
+    
+    
+            var marker_b915a2c733e61c741658c886188df999 = L.marker(
+                [33.5509798061351, -7.674618692589315],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_ffccc67439684c3ec73a444f07f20b04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_002816aa4fa478d2e3c1f3ba0f68b477 = $(`<div id="html_002816aa4fa478d2e3c1f3ba0f68b477" style="width: 100.0%; height: 100.0%;">Hay Salam, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement de Hay Hassani مقاطعة الحي الحسني, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20200, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_ffccc67439684c3ec73a444f07f20b04.setContent(html_002816aa4fa478d2e3c1f3ba0f68b477);
+            
+        
+
+        marker_b915a2c733e61c741658c886188df999.bindPopup(popup_ffccc67439684c3ec73a444f07f20b04)
+        ;
+
+        
+    
+    
+            var marker_d81d99fe17a8fce4d5f728d7dc170e5c = L.marker(
+                [33.5509798061351, -7.669102257405802],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_5bc208f2ac34ff36ab3864b0e31c3672 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90f7b1e51ab7755e607ef52d8f577e43 = $(`<div id="html_90f7b1e51ab7755e607ef52d8f577e43" style="width: 100.0%; height: 100.0%;">Avenue Mohamed Taib Naciri, Anfa Préfecture, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement de Hay Hassani مقاطعة الحي الحسني, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20200, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_5bc208f2ac34ff36ab3864b0e31c3672.setContent(html_90f7b1e51ab7755e607ef52d8f577e43);
+            
+        
+
+        marker_d81d99fe17a8fce4d5f728d7dc170e5c.bindPopup(popup_5bc208f2ac34ff36ab3864b0e31c3672)
+        ;
+
+        
+    
+    
+            var marker_0ef04f6422e9f1dd8c4d5d55d9065bcc = L.marker(
+                [33.549725969898134, -7.638009622735088],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_c43c1e2bf11a41f986c80121486f3f07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f31888ace3dd4eee05bfa48c6065b794 = $(`<div id="html_f31888ace3dd4eee05bfa48c6065b794" style="width: 100.0%; height: 100.0%;">Autoroute Urbaine de Casablanca, Vermont ⵯⵉⵔⵎoⵏ حي فيرمونت, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement d'Aïn Chock مقاطعة عين الشق, Préfecture d'arrondissement d'Aïn Chock عمالة مقاطعة عين الشق, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20250, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_c43c1e2bf11a41f986c80121486f3f07.setContent(html_f31888ace3dd4eee05bfa48c6065b794);
+            
+        
+
+        marker_0ef04f6422e9f1dd8c4d5d55d9065bcc.bindPopup(popup_c43c1e2bf11a41f986c80121486f3f07)
+        ;
+
+        
+    
+    
+            var marker_6c2666d0071f5ce1437a8dfb0d2ceda5 = L.marker(
+                [33.55808453443336, -7.618451352538995],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_5f30005b8e5fee642ade56881e1ff3ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2231e1d813c6d167759c4084051bd3a5 = $(`<div id="html_2231e1d813c6d167759c4084051bd3a5" style="width: 100.0%; height: 100.0%;">Rue de l'Isère, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement de Maârif مقاطعة المعاريف, Préfecture d'arrondissements de Casablanca-Anfa عمالة مقاطعات الدار البيضاء أنفا, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20076, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_5f30005b8e5fee642ade56881e1ff3ee.setContent(html_2231e1d813c6d167759c4084051bd3a5);
+            
+        
+
+        marker_6c2666d0071f5ce1437a8dfb0d2ceda5.bindPopup(popup_5f30005b8e5fee642ade56881e1ff3ee)
+        ;
+
+        
+    
+    
+            var marker_c4effef1fff3886757c7e1011acccf72 = L.marker(
+                [33.52255505063103, -7.664588810437472],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_93c2f6403d39c3e236c678c3ddf13085 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef2aa2a936fcbccb2cac3731f0b15834 = $(`<div id="html_ef2aa2a936fcbccb2cac3731f0b15834" style="width: 100.0%; height: 100.0%;">Pénétrante d'Azbane, Ennassim, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement de Hay Hassani مقاطعة الحي الحسني, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20084, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_93c2f6403d39c3e236c678c3ddf13085.setContent(html_ef2aa2a936fcbccb2cac3731f0b15834);
+            
+        
+
+        marker_c4effef1fff3886757c7e1011acccf72.bindPopup(popup_93c2f6403d39c3e236c678c3ddf13085)
+        ;
+
+        
+    
+    
+            var marker_7efdea239ad3572a375308ea07d7bb7b = L.marker(
+                [33.52380928103105, -7.646535022564155],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_dbc2fa53d948a62fc58e6189f7cb5bed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_157929fda74eaf3081e55bf8eeb50045 = $(`<div id="html_157929fda74eaf3081e55bf8eeb50045" style="width: 100.0%; height: 100.0%;">Boulevard Abdelmalek Essaâdi شارع عبد المالك السعدي, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement d'Aïn Chock مقاطعة عين الشق, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20190, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_dbc2fa53d948a62fc58e6189f7cb5bed.setContent(html_157929fda74eaf3081e55bf8eeb50045);
+            
+        
+
+        marker_7efdea239ad3572a375308ea07d7bb7b.bindPopup(popup_dbc2fa53d948a62fc58e6189f7cb5bed)
+        ;
+
+        
+    
+    
+            var marker_f401933c861737f1cd389d2d894f0033 = L.marker(
+                [33.526317687264765, -7.634499163981944],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_cded2b4dc1a37531d8b06f7a894ab135 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b503abddd96a6bec0ed69e436ff0990 = $(`<div id="html_2b503abddd96a6bec0ed69e436ff0990" style="width: 100.0%; height: 100.0%;">Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement d'Aïn Chock مقاطعة عين الشق, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20001, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_cded2b4dc1a37531d8b06f7a894ab135.setContent(html_2b503abddd96a6bec0ed69e436ff0990);
+            
+        
+
+        marker_f401933c861737f1cd389d2d894f0033.bindPopup(popup_cded2b4dc1a37531d8b06f7a894ab135)
+        ;
+
+        
+    
+    
+            var marker_8d743bf2b0534e4d2fa5722249ad7e8b = L.marker(
+                [33.53091624305766, -7.623967787722508],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_ce5355705fc982e8ee73c5c327744ca7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_625eb05b03b1d0cab8eb37b6a8533e55 = $(`<div id="html_625eb05b03b1d0cab8eb37b6a8533e55" style="width: 100.0%; height: 100.0%;">Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement d'Aïn Chock مقاطعة عين الشق, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20460, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_ce5355705fc982e8ee73c5c327744ca7.setContent(html_625eb05b03b1d0cab8eb37b6a8533e55);
+            
+        
+
+        marker_8d743bf2b0534e4d2fa5722249ad7e8b.bindPopup(popup_ce5355705fc982e8ee73c5c327744ca7)
+        ;
+
+        
+    
+    
+            var marker_61b7a995731e2957a55d510ea624149a = L.marker(
+                [33.531334281457504, -7.648039504886932],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_12cfaa98024cf4302bdc10b8960061e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26aa486592cfc16590757d2530ab6257 = $(`<div id="html_26aa486592cfc16590757d2530ab6257" style="width: 100.0%; height: 100.0%;">شارع ابو بكر القادري, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement d'Aïn Chock مقاطعة عين الشق, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20190, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_12cfaa98024cf4302bdc10b8960061e7.setContent(html_26aa486592cfc16590757d2530ab6257);
+            
+        
+
+        marker_61b7a995731e2957a55d510ea624149a.bindPopup(popup_12cfaa98024cf4302bdc10b8960061e7)
+        ;
+
+        
+    
+    
+            var marker_c2f0dc5f04df8536e19e726b84753418 = L.marker(
+                [33.539694624988314, -7.625472270045285],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_bcaee8bdeff34e165dfcb8e1505377b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efa2be0a9b30a79bf5dfe0d654fecc9f = $(`<div id="html_efa2be0a9b30a79bf5dfe0d654fecc9f" style="width: 100.0%; height: 100.0%;">Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Arrondissement d'Aïn Chock مقاطعة عين الشق, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20150, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_bcaee8bdeff34e165dfcb8e1505377b7.setContent(html_efa2be0a9b30a79bf5dfe0d654fecc9f);
+            
+        
+
+        marker_c2f0dc5f04df8536e19e726b84753418.bindPopup(popup_bcaee8bdeff34e165dfcb8e1505377b7)
+        ;
+
+        
+    
+    
+            var marker_3cbacb9f527295c90e10a1476af3eddf = L.marker(
+                [33.58858643061424, -7.644529046133786],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_200b12d74bace019cc77c1ccfc5a1c7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5996cd3b445de7c2a96fc9e20e0599d3 = $(`<div id="html_5996cd3b445de7c2a96fc9e20e0599d3" style="width: 100.0%; height: 100.0%;">Banque Populaire البنك الشعبي, Avenue Moulay Rachid شارع مولاي رشيد, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Racine راسين, Arrondissement d'Anfa مقاطعة أنفا, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20050, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_200b12d74bace019cc77c1ccfc5a1c7f.setContent(html_5996cd3b445de7c2a96fc9e20e0599d3);
+            
+        
+
+        marker_3cbacb9f527295c90e10a1476af3eddf.bindPopup(popup_200b12d74bace019cc77c1ccfc5a1c7f)
+        ;
+
+        
+    
+    
+            var marker_df8aba68e9217c5a682364bcf112f892 = L.marker(
+                [33.58649760347969, -7.657567892931182],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_dc5b9e52cfa649f159762ae1a7b7659c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b96ef5f7a8290d0104d028571a2e075 = $(`<div id="html_5b96ef5f7a8290d0104d028571a2e075" style="width: 100.0%; height: 100.0%;">Golf Royal d'Anfa, Allée des Buttes, Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Anfa ⴰⵏⴼⴰ أنفا, Arrondissement d'Anfa مقاطعة أنفا, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20370, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_dc5b9e52cfa649f159762ae1a7b7659c.setContent(html_5b96ef5f7a8290d0104d028571a2e075);
+            
+        
+
+        marker_df8aba68e9217c5a682364bcf112f892.bindPopup(popup_dc5b9e52cfa649f159762ae1a7b7659c)
+        ;
+
+        
+    
+    
+            var marker_a3fcd8e18f0b87c33a285b88dc6127a4 = L.marker(
+                [33.58649760347969, -7.664087316329879],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+        var popup_8267e06d7221466d3c94663382ef4171 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5399883c0c2ad6e3ede7bcb41d6e575 = $(`<div id="html_d5399883c0c2ad6e3ede7bcb41d6e575" style="width: 100.0%; height: 100.0%;">Casablanca ⵜⴰⴷⴷⴰⵔⵜ ⵜⵓⵎⵍⵉⵍⵜ الدار البيضاء, Anfa ⴰⵏⴼⴰ أنفا, Arrondissement d'Anfa مقاطعة أنفا, Pachalik de Casablanca, Préfecture de Casablanca عمالة الدار البيضاء, Casablanca-Settat ⵜⵉⴳⵎⵉ ⵜⵓⵎⵍⵉⵍⵜ-ⵙⵟⵟⴰⵜ الدار البيضاء-سطات, 20370, Maroc ⵍⵎⵖⵔⵉⴱ المغرب - Group 1</div>`)[0];
+                popup_8267e06d7221466d3c94663382ef4171.setContent(html_d5399883c0c2ad6e3ede7bcb41d6e575);
+            
+        
+
+        marker_a3fcd8e18f0b87c33a285b88dc6127a4.bindPopup(popup_8267e06d7221466d3c94663382ef4171)
+        ;
+
+        
+    
+    
+            var marker_f67b109aeda4d3af5caace041c557533 = L.marker(
+                [33.5653660603819, -7.653567337663799],
+                {}
+            ).addTo(marker_cluster_cf50fe06dd5c41e66bec817cd264980a);
+        
+    
+            var icon_420fb13e58489c79808e136e7bd51473 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f67b109aeda4d3af5caace041c557533.setIcon(icon_420fb13e58489c79808e136e7bd51473);
+        
+    
+        var popup_4ab92a851c0a6f8a42d259f53139d49b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_668d44f229d8b597f360299cf521c0ef = $(`<div id="html_668d44f229d8b597f360299cf521c0ef" style="width: 100.0%; height: 100.0%;">Fire Department Vehicle (Group Group 1)</div>`)[0];
+                popup_4ab92a851c0a6f8a42d259f53139d49b.setContent(html_668d44f229d8b597f360299cf521c0ef);
+            
+        
+
+        marker_f67b109aeda4d3af5caace041c557533.bindPopup(popup_4ab92a851c0a6f8a42d259f53139d49b)
+        ;
+
+        
+    
+    
+            marker_cluster_cf50fe06dd5c41e66bec817cd264980a.addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_4071d33a4111d41560f2a0109d676699 = L.polyline(
+                [[33.593852, -7.632365], [33.593776, -7.632505], [33.593381, -7.633041], [33.593064, -7.632713], [33.592862, -7.632496], [33.592795, -7.632392], [33.592393, -7.633208], [33.59211, -7.633781], [33.591747, -7.634582], [33.591451, -7.635198], [33.591122, -7.635908], [33.591154, -7.63599], [33.591154, -7.63608], [33.591124, -7.636159], [33.591069, -7.636217], [33.590977, -7.636244], [33.590929, -7.636234], [33.590866, -7.63619], [33.590814, -7.636086], [33.590812, -7.635997], [33.590491, -7.635632], [33.590115, -7.635269], [33.58949, -7.634626], [33.589083, -7.634255], [33.588543, -7.633721], [33.588158, -7.633333], [33.58773, -7.632913], [33.587023, -7.63212], [33.586909, -7.631949], [33.586632, -7.631497], [33.586305, -7.630921], [33.585825, -7.630135], [33.585553, -7.62969], [33.585287, -7.629959], [33.584539, -7.630792], [33.584089, -7.631269], [33.583723, -7.631616], [33.583371, -7.631954], [33.582959, -7.632338], [33.582683, -7.632591], [33.582405, -7.632861], [33.582106, -7.633143], [33.581829, -7.633404], [33.581562, -7.633673], [33.581124, -7.634115], [33.580968, -7.634282], [33.580686, -7.634575], [33.58043, -7.634834], [33.580162, -7.63511], [33.579484, -7.635813], [33.579507, -7.63586], [33.57951, -7.635927], [33.579465, -7.636003], [33.579404, -7.636023], [33.579351, -7.636001], [33.579035, -7.636369], [33.578891, -7.636479], [33.57867, -7.63661], [33.578524, -7.636703], [33.578013, -7.637147], [33.577788, -7.637352], [33.577435, -7.637673], [33.577382, -7.637722], [33.576424, -7.6386], [33.576112, -7.638856], [33.575934, -7.639003], [33.575545, -7.639315], [33.575189, -7.639611], [33.575011, -7.639761], [33.574598, -7.640093], [33.574258, -7.640373], [33.574058, -7.640526], [33.573881, -7.640659], [33.573757, -7.64079], [33.573692, -7.640872], [33.573658, -7.640883], [33.573598, -7.64087], [33.572866, -7.64144], [33.572297, -7.641907], [33.5719, -7.642214], [33.571491, -7.642533], [33.570966, -7.642963], [33.57081, -7.643093], [33.570108, -7.643657], [33.569697, -7.643985], [33.569472, -7.644127], [33.56937, -7.644169], [33.569296, -7.644288], [33.568764, -7.644726], [33.568183, -7.645203], [33.567547, -7.645692], [33.567271, -7.645906], [33.56656, -7.646436], [33.566015, -7.646817], [33.565509, -7.647141], [33.565233, -7.647339], [33.565057, -7.647489], [33.565026, -7.64768], [33.565053, -7.647898], [33.565232, -7.648413], [33.565691, -7.649629], [33.56591, -7.650205], [33.565975, -7.650406], [33.566037, -7.6507], [33.566052, -7.650857], [33.566055, -7.651361], [33.566042, -7.652798], [33.566034, -7.654174], [33.566032, -7.654231], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_660b16713e69ae507387d2c066e2388e = L.polyline(
+                [[33.58972, -7.639172], [33.589935, -7.638593], [33.59023, -7.637913], [33.590455, -7.637368], [33.590866, -7.636289], [33.590875, -7.636252], [33.590866, -7.63619], [33.590814, -7.636086], [33.590812, -7.635997], [33.590491, -7.635632], [33.590115, -7.635269], [33.58949, -7.634626], [33.589083, -7.634255], [33.588543, -7.633721], [33.588158, -7.633333], [33.58773, -7.632913], [33.587023, -7.63212], [33.586909, -7.631949], [33.586632, -7.631497], [33.586305, -7.630921], [33.585825, -7.630135], [33.585553, -7.62969], [33.585287, -7.629959], [33.584539, -7.630792], [33.584089, -7.631269], [33.583723, -7.631616], [33.583371, -7.631954], [33.582959, -7.632338], [33.582683, -7.632591], [33.582405, -7.632861], [33.582106, -7.633143], [33.581829, -7.633404], [33.581562, -7.633673], [33.581124, -7.634115], [33.580968, -7.634282], [33.580686, -7.634575], [33.58043, -7.634834], [33.580162, -7.63511], [33.579484, -7.635813], [33.579507, -7.63586], [33.57951, -7.635927], [33.579465, -7.636003], [33.579404, -7.636023], [33.579351, -7.636001], [33.579035, -7.636369], [33.578891, -7.636479], [33.57867, -7.63661], [33.578524, -7.636703], [33.578013, -7.637147], [33.577788, -7.637352], [33.577435, -7.637673], [33.577382, -7.637722], [33.576424, -7.6386], [33.576112, -7.638856], [33.575934, -7.639003], [33.575545, -7.639315], [33.575189, -7.639611], [33.575011, -7.639761], [33.574598, -7.640093], [33.574258, -7.640373], [33.574058, -7.640526], [33.573881, -7.640659], [33.573757, -7.64079], [33.573692, -7.640872], [33.573658, -7.640883], [33.573598, -7.64087], [33.572866, -7.64144], [33.572297, -7.641907], [33.5719, -7.642214], [33.571491, -7.642533], [33.570966, -7.642963], [33.57081, -7.643093], [33.570108, -7.643657], [33.569697, -7.643985], [33.569472, -7.644127], [33.56937, -7.644169], [33.569296, -7.644288], [33.568764, -7.644726], [33.568183, -7.645203], [33.567547, -7.645692], [33.567271, -7.645906], [33.56656, -7.646436], [33.566015, -7.646817], [33.565509, -7.647141], [33.565233, -7.647339], [33.565057, -7.647489], [33.565026, -7.64768], [33.565053, -7.647898], [33.565232, -7.648413], [33.565691, -7.649629], [33.56591, -7.650205], [33.565975, -7.650406], [33.566037, -7.6507], [33.566052, -7.650857], [33.566055, -7.651361], [33.566042, -7.652798], [33.566034, -7.654174], [33.566032, -7.654231], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_9462dbc985646268bcab400e927f81ad = L.polyline(
+                [[33.578044, -7.643701], [33.57698, -7.642845], [33.576878, -7.643425], [33.576829, -7.643856], [33.576776, -7.644173], [33.575806, -7.643368], [33.574941, -7.642682], [33.574719, -7.642515], [33.57456, -7.642373], [33.574243, -7.641996], [33.573805, -7.641128], [33.573692, -7.640872], [33.573658, -7.640883], [33.573598, -7.64087], [33.572866, -7.64144], [33.572297, -7.641907], [33.5719, -7.642214], [33.571491, -7.642533], [33.570966, -7.642963], [33.57081, -7.643093], [33.570108, -7.643657], [33.569697, -7.643985], [33.569472, -7.644127], [33.56937, -7.644169], [33.569296, -7.644288], [33.568764, -7.644726], [33.568183, -7.645203], [33.567547, -7.645692], [33.567271, -7.645906], [33.56656, -7.646436], [33.566015, -7.646817], [33.565509, -7.647141], [33.565233, -7.647339], [33.565057, -7.647489], [33.565026, -7.64768], [33.565053, -7.647898], [33.565232, -7.648413], [33.565691, -7.649629], [33.56591, -7.650205], [33.565975, -7.650406], [33.566037, -7.6507], [33.566052, -7.650857], [33.566055, -7.651361], [33.566042, -7.652798], [33.566034, -7.654174], [33.566032, -7.654231], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_bebd44a12768cbf28378f7273d62f9d6 = L.polyline(
+                [[33.563992, -7.635083], [33.56409, -7.634985], [33.564046, -7.634895], [33.56405, -7.63479], [33.564071, -7.634743], [33.564136, -7.634683], [33.56418, -7.63467], [33.564265, -7.63469], [33.564299, -7.63472], [33.564341, -7.634806], [33.564339, -7.634906], [33.564321, -7.634951], [33.564493, -7.635301], [33.56552, -7.63715], [33.565541, -7.637144], [33.565623, -7.637143], [33.5657, -7.63718], [33.565765, -7.637257], [33.565798, -7.637366], [33.565786, -7.637487], [33.56574, -7.637576], [33.56617, -7.638342], [33.566417, -7.638809], [33.566988, -7.63981], [33.567699, -7.64112], [33.567756, -7.641229], [33.568151, -7.641911], [33.568525, -7.64258], [33.569129, -7.643759], [33.569231, -7.643931], [33.56928, -7.644017], [33.56937, -7.644169], [33.569296, -7.644288], [33.568764, -7.644726], [33.568183, -7.645203], [33.567547, -7.645692], [33.567271, -7.645906], [33.56656, -7.646436], [33.566015, -7.646817], [33.565509, -7.647141], [33.565233, -7.647339], [33.565057, -7.647489], [33.565026, -7.64768], [33.565053, -7.647898], [33.565232, -7.648413], [33.565691, -7.649629], [33.56591, -7.650205], [33.565975, -7.650406], [33.566037, -7.6507], [33.566052, -7.650857], [33.566055, -7.651361], [33.566042, -7.652798], [33.566034, -7.654174], [33.566032, -7.654231], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_53b0b9fb0aba37e06cfb9a48234be41f = L.polyline(
+                [[33.582264, -7.671365], [33.581483, -7.671621], [33.581069, -7.670034], [33.579727, -7.670446], [33.578875, -7.669841], [33.578203, -7.671308], [33.578143, -7.671553], [33.578101, -7.671666], [33.577735, -7.672469], [33.577558, -7.672929], [33.577361, -7.673418], [33.577284, -7.673592], [33.577118, -7.67348], [33.576771, -7.673204], [33.576687, -7.673143], [33.576497, -7.673002], [33.576397, -7.672931], [33.576057, -7.672658], [33.575776, -7.67243], [33.575439, -7.672209], [33.575109, -7.672008], [33.574793, -7.671815], [33.574445, -7.671601], [33.574152, -7.671401], [33.574046, -7.671317], [33.57383, -7.671111], [33.5737, -7.67097], [33.573572, -7.670793], [33.573375, -7.670503], [33.573244, -7.670345], [33.572991, -7.670139], [33.572532, -7.669849], [33.572172, -7.669637], [33.571836, -7.669425], [33.571514, -7.669225], [33.57144, -7.669178], [33.570805, -7.668765], [33.570503, -7.668476], [33.570264, -7.668153], [33.570214, -7.668094], [33.57022, -7.667909], [33.570217, -7.667815], [33.57021, -7.667573], [33.570115, -7.666172], [33.569963, -7.664662], [33.569829, -7.663602], [33.569743, -7.662758], [33.569713, -7.662564], [33.569634, -7.662355], [33.569366, -7.661874], [33.568956, -7.661196], [33.568073, -7.659679], [33.567689, -7.659089], [33.567329, -7.658622], [33.567195, -7.658389], [33.567136, -7.658243], [33.567071, -7.658011], [33.566996, -7.657457], [33.566983, -7.657199], [33.566995, -7.656957], [33.566957, -7.656939], [33.566916, -7.656898], [33.566886, -7.656838], [33.566876, -7.656768], [33.566889, -7.656699], [33.566923, -7.65664], [33.566807, -7.656442], [33.566548, -7.656076], [33.566221, -7.65555], [33.566089, -7.655307], [33.565979, -7.655045], [33.565925, -7.654788], [33.565913, -7.65463], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_1d56c816f413e3f273925ec3daf33447 = L.polyline(
+                [[33.578476, -7.693869], [33.578765, -7.693152], [33.578983, -7.692611], [33.578966, -7.692549], [33.578689, -7.691425], [33.578639, -7.691308], [33.578477, -7.691059], [33.577855, -7.69034], [33.577681, -7.690085], [33.578045, -7.689612], [33.579751, -7.687405], [33.579932, -7.68719], [33.580318, -7.686778], [33.580602, -7.686728], [33.582524, -7.68614], [33.582757, -7.68609], [33.582835, -7.686082], [33.582834, -7.685729], [33.582891, -7.68397], [33.582902, -7.683071], [33.582852, -7.683024], [33.582841, -7.682991], [33.582849, -7.682921], [33.582867, -7.682893], [33.582837, -7.682591], [33.582638, -7.681479], [33.582568, -7.681004], [33.58255, -7.680462], [33.582562, -7.680043], [33.5826, -7.679602], [33.582623, -7.679374], [33.582706, -7.678703], [33.582772, -7.678044], [33.582859, -7.677291], [33.582938, -7.677093], [33.582957, -7.677054], [33.58304, -7.676895], [33.582959, -7.676704], [33.582691, -7.676095], [33.582647, -7.675998], [33.582468, -7.675592], [33.582354, -7.675397], [33.582168, -7.675202], [33.582073, -7.675138], [33.581983, -7.675094], [33.581842, -7.675057], [33.58094, -7.674917], [33.5803, -7.674788], [33.580252, -7.674856], [33.580228, -7.67477], [33.579523, -7.674585], [33.579328, -7.674525], [33.578576, -7.674216], [33.578435, -7.674153], [33.57754, -7.673748], [33.577284, -7.673592], [33.577118, -7.67348], [33.576771, -7.673204], [33.576687, -7.673143], [33.576497, -7.673002], [33.576397, -7.672931], [33.576057, -7.672658], [33.575776, -7.67243], [33.575439, -7.672209], [33.575109, -7.672008], [33.574793, -7.671815], [33.574445, -7.671601], [33.574152, -7.671401], [33.574046, -7.671317], [33.57383, -7.671111], [33.5737, -7.67097], [33.573572, -7.670793], [33.573375, -7.670503], [33.573244, -7.670345], [33.572991, -7.670139], [33.572532, -7.669849], [33.572172, -7.669637], [33.571836, -7.669425], [33.571514, -7.669225], [33.57144, -7.669178], [33.570805, -7.668765], [33.570503, -7.668476], [33.570264, -7.668153], [33.570214, -7.668094], [33.57022, -7.667909], [33.570217, -7.667815], [33.57021, -7.667573], [33.570115, -7.666172], [33.569963, -7.664662], [33.569829, -7.663602], [33.569743, -7.662758], [33.569713, -7.662564], [33.569634, -7.662355], [33.569366, -7.661874], [33.568956, -7.661196], [33.568073, -7.659679], [33.567689, -7.659089], [33.567329, -7.658622], [33.567195, -7.658389], [33.567136, -7.658243], [33.567071, -7.658011], [33.566996, -7.657457], [33.566983, -7.657199], [33.566995, -7.656957], [33.566957, -7.656939], [33.566916, -7.656898], [33.566886, -7.656838], [33.566876, -7.656768], [33.566889, -7.656699], [33.566923, -7.65664], [33.566807, -7.656442], [33.566548, -7.656076], [33.566221, -7.65555], [33.566089, -7.655307], [33.565979, -7.655045], [33.565925, -7.654788], [33.565913, -7.65463], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_933fcd7b70aa1aa8afe2ed0529ed8b88 = L.polyline(
+                [[33.575635, -7.691713], [33.575647, -7.691713], [33.575769, -7.691741], [33.576015, -7.691902], [33.576067, -7.691842], [33.576332, -7.691529], [33.577243, -7.690656], [33.577471, -7.690387], [33.577681, -7.690085], [33.578045, -7.689612], [33.579751, -7.687405], [33.579932, -7.68719], [33.580318, -7.686778], [33.580602, -7.686728], [33.582524, -7.68614], [33.582757, -7.68609], [33.582835, -7.686082], [33.582834, -7.685729], [33.582891, -7.68397], [33.582902, -7.683071], [33.582852, -7.683024], [33.582841, -7.682991], [33.582849, -7.682921], [33.582867, -7.682893], [33.582837, -7.682591], [33.582638, -7.681479], [33.582568, -7.681004], [33.58255, -7.680462], [33.582562, -7.680043], [33.5826, -7.679602], [33.582623, -7.679374], [33.582706, -7.678703], [33.582772, -7.678044], [33.582859, -7.677291], [33.582938, -7.677093], [33.582957, -7.677054], [33.58304, -7.676895], [33.582959, -7.676704], [33.582691, -7.676095], [33.582647, -7.675998], [33.582468, -7.675592], [33.582354, -7.675397], [33.582168, -7.675202], [33.582073, -7.675138], [33.581983, -7.675094], [33.581842, -7.675057], [33.58094, -7.674917], [33.5803, -7.674788], [33.580252, -7.674856], [33.580228, -7.67477], [33.579523, -7.674585], [33.579328, -7.674525], [33.578576, -7.674216], [33.578435, -7.674153], [33.57754, -7.673748], [33.577284, -7.673592], [33.577118, -7.67348], [33.576771, -7.673204], [33.576687, -7.673143], [33.576497, -7.673002], [33.576397, -7.672931], [33.576057, -7.672658], [33.575776, -7.67243], [33.575439, -7.672209], [33.575109, -7.672008], [33.574793, -7.671815], [33.574445, -7.671601], [33.574152, -7.671401], [33.574046, -7.671317], [33.57383, -7.671111], [33.5737, -7.67097], [33.573572, -7.670793], [33.573375, -7.670503], [33.573244, -7.670345], [33.572991, -7.670139], [33.572532, -7.669849], [33.572172, -7.669637], [33.571836, -7.669425], [33.571514, -7.669225], [33.57144, -7.669178], [33.570805, -7.668765], [33.570503, -7.668476], [33.570264, -7.668153], [33.570214, -7.668094], [33.57022, -7.667909], [33.570217, -7.667815], [33.57021, -7.667573], [33.570115, -7.666172], [33.569963, -7.664662], [33.569829, -7.663602], [33.569743, -7.662758], [33.569713, -7.662564], [33.569634, -7.662355], [33.569366, -7.661874], [33.568956, -7.661196], [33.568073, -7.659679], [33.567689, -7.659089], [33.567329, -7.658622], [33.567195, -7.658389], [33.567136, -7.658243], [33.567071, -7.658011], [33.566996, -7.657457], [33.566983, -7.657199], [33.566995, -7.656957], [33.566957, -7.656939], [33.566916, -7.656898], [33.566886, -7.656838], [33.566876, -7.656768], [33.566889, -7.656699], [33.566923, -7.65664], [33.566807, -7.656442], [33.566548, -7.656076], [33.566221, -7.65555], [33.566089, -7.655307], [33.565979, -7.655045], [33.565925, -7.654788], [33.565913, -7.65463], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "beige", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_6f81a2ff6e8863761a48af409d68df71 = L.polyline(
+                [[33.572724, -7.684155], [33.572692, -7.684232], [33.573014, -7.684429], [33.57259, -7.685293], [33.572642, -7.685329], [33.572938, -7.685402], [33.572974, -7.685393], [33.57308, -7.685219], [33.573751, -7.683872], [33.574416, -7.682202], [33.574645, -7.681595], [33.57486, -7.681046], [33.575087, -7.680349], [33.575266, -7.679753], [33.576139, -7.676018], [33.576145, -7.675913], [33.576222, -7.675673], [33.576433, -7.67513], [33.576753, -7.674352], [33.576945, -7.673895], [33.577118, -7.67348], [33.576771, -7.673204], [33.576687, -7.673143], [33.576497, -7.673002], [33.576397, -7.672931], [33.576057, -7.672658], [33.575776, -7.67243], [33.575439, -7.672209], [33.575109, -7.672008], [33.574793, -7.671815], [33.574445, -7.671601], [33.574152, -7.671401], [33.574046, -7.671317], [33.57383, -7.671111], [33.5737, -7.67097], [33.573572, -7.670793], [33.573375, -7.670503], [33.573244, -7.670345], [33.572991, -7.670139], [33.572532, -7.669849], [33.572172, -7.669637], [33.571836, -7.669425], [33.571514, -7.669225], [33.57144, -7.669178], [33.570805, -7.668765], [33.570503, -7.668476], [33.570264, -7.668153], [33.570214, -7.668094], [33.57022, -7.667909], [33.570217, -7.667815], [33.57021, -7.667573], [33.570115, -7.666172], [33.569963, -7.664662], [33.569829, -7.663602], [33.569743, -7.662758], [33.569713, -7.662564], [33.569634, -7.662355], [33.569366, -7.661874], [33.568956, -7.661196], [33.568073, -7.659679], [33.567689, -7.659089], [33.567329, -7.658622], [33.567195, -7.658389], [33.567136, -7.658243], [33.567071, -7.658011], [33.566996, -7.657457], [33.566983, -7.657199], [33.566995, -7.656957], [33.566957, -7.656939], [33.566916, -7.656898], [33.566886, -7.656838], [33.566876, -7.656768], [33.566889, -7.656699], [33.566923, -7.65664], [33.566807, -7.656442], [33.566548, -7.656076], [33.566221, -7.65555], [33.566089, -7.655307], [33.565979, -7.655045], [33.565925, -7.654788], [33.565913, -7.65463], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_51d6ccd7568d009a6351d7833c1a95b5 = L.polyline(
+                [[33.55857, -7.666346], [33.559191, -7.66577], [33.558896, -7.665214], [33.558769, -7.664941], [33.558662, -7.664657], [33.558434, -7.663902], [33.55827, -7.663362], [33.558111, -7.662836], [33.55804, -7.6626], [33.557501, -7.660896], [33.557578, -7.660862], [33.558715, -7.660359], [33.55928, -7.66007], [33.559381, -7.659985], [33.559439, -7.659854], [33.559441, -7.659706], [33.558914, -7.657664], [33.558923, -7.657581], [33.558953, -7.657505], [33.559265, -7.657114], [33.559216, -7.657028], [33.559284, -7.656968], [33.559354, -7.65691], [33.560593, -7.656094], [33.561545, -7.655429], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_431fa82c5ad133f835cebea45951c7a3 = L.polyline(
+                [[33.560268, -7.680043], [33.560463, -7.680115], [33.560357, -7.680399], [33.56025, -7.680676], [33.560647, -7.680855], [33.560584, -7.681057], [33.558804, -7.680225], [33.558281, -7.679988], [33.558113, -7.679783], [33.55853, -7.678762], [33.558881, -7.677832], [33.5594, -7.676202], [33.559749, -7.674983], [33.560096, -7.673869], [33.560321, -7.673089], [33.560658, -7.671858], [33.56113, -7.670295], [33.561168, -7.670185], [33.561408, -7.669526], [33.561509, -7.669254], [33.561548, -7.669151], [33.561586, -7.669059], [33.561626, -7.668969], [33.561727, -7.668738], [33.561765, -7.668649], [33.561997, -7.668077], [33.562306, -7.667353], [33.562599, -7.666611], [33.562981, -7.66565], [33.563427, -7.664516], [33.563465, -7.66442], [33.564248, -7.662434], [33.565148, -7.66004], [33.565274, -7.659739], [33.565367, -7.659535], [33.565997, -7.658424], [33.566678, -7.657241], [33.566916, -7.656898], [33.566886, -7.656838], [33.566876, -7.656768], [33.566889, -7.656699], [33.566923, -7.65664], [33.566807, -7.656442], [33.566548, -7.656076], [33.566221, -7.65555], [33.566089, -7.655307], [33.565979, -7.655045], [33.565925, -7.654788], [33.565913, -7.65463], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_f6cc46d4bd2e11d61af8f06254ec30d9 = L.polyline(
+                [[33.570179, -7.672096], [33.570347, -7.671708], [33.570506, -7.671352], [33.570544, -7.671261], [33.570933, -7.670377], [33.571075, -7.670055], [33.571321, -7.669544], [33.571369, -7.669316], [33.57144, -7.669178], [33.570805, -7.668765], [33.570503, -7.668476], [33.570264, -7.668153], [33.570214, -7.668094], [33.57022, -7.667909], [33.570217, -7.667815], [33.57021, -7.667573], [33.570115, -7.666172], [33.569963, -7.664662], [33.569829, -7.663602], [33.569743, -7.662758], [33.569713, -7.662564], [33.569634, -7.662355], [33.569366, -7.661874], [33.568956, -7.661196], [33.568073, -7.659679], [33.567689, -7.659089], [33.567329, -7.658622], [33.567195, -7.658389], [33.567136, -7.658243], [33.567071, -7.658011], [33.566996, -7.657457], [33.566983, -7.657199], [33.566995, -7.656957], [33.566957, -7.656939], [33.566916, -7.656898], [33.566886, -7.656838], [33.566876, -7.656768], [33.566889, -7.656699], [33.566923, -7.65664], [33.566807, -7.656442], [33.566548, -7.656076], [33.566221, -7.65555], [33.566089, -7.655307], [33.565979, -7.655045], [33.565925, -7.654788], [33.565913, -7.65463], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_96635a2f7ca020e0923fb5fee7ffbf0c = L.polyline(
+                [[33.568581, -7.690256], [33.568551, -7.690076], [33.568529, -7.68978], [33.569148, -7.689338], [33.569239, -7.689295], [33.569366, -7.689274], [33.569505, -7.689279], [33.56988, -7.689365], [33.570131, -7.689456], [33.571391, -7.689924], [33.5715, -7.689493], [33.572025, -7.687406], [33.571989, -7.687336], [33.571917, -7.687276], [33.570686, -7.686488], [33.569789, -7.685879], [33.569279, -7.685465], [33.568829, -7.6851], [33.568567, -7.68489], [33.568343, -7.684711], [33.568082, -7.684535], [33.567828, -7.684367], [33.567788, -7.684347], [33.567574, -7.684228], [33.567125, -7.683975], [33.566073, -7.68343], [33.565508, -7.683225], [33.565353, -7.683194], [33.565378, -7.683066], [33.565526, -7.68271], [33.565602, -7.682535], [33.565854, -7.681969], [33.565946, -7.681748], [33.566063, -7.681474], [33.566146, -7.681288], [33.566369, -7.680779], [33.566821, -7.679785], [33.567144, -7.679017], [33.56726, -7.678742], [33.567515, -7.678157], [33.567942, -7.677185], [33.568095, -7.676839], [33.568272, -7.676431], [33.568481, -7.676007], [33.568513, -7.675938], [33.568609, -7.675723], [33.568687, -7.675549], [33.568785, -7.675344], [33.569458, -7.67378], [33.569561, -7.673536], [33.569592, -7.673465], [33.569617, -7.673409], [33.569922, -7.672677], [33.570007, -7.672485], [33.570115, -7.672244], [33.570347, -7.671708], [33.570506, -7.671352], [33.570544, -7.671261], [33.570933, -7.670377], [33.571075, -7.670055], [33.571321, -7.669544], [33.571369, -7.669316], [33.57144, -7.669178], [33.570805, -7.668765], [33.570503, -7.668476], [33.570264, -7.668153], [33.570214, -7.668094], [33.57022, -7.667909], [33.570217, -7.667815], [33.57021, -7.667573], [33.570115, -7.666172], [33.569963, -7.664662], [33.569829, -7.663602], [33.569743, -7.662758], [33.569713, -7.662564], [33.569634, -7.662355], [33.569366, -7.661874], [33.568956, -7.661196], [33.568073, -7.659679], [33.567689, -7.659089], [33.567329, -7.658622], [33.567195, -7.658389], [33.567136, -7.658243], [33.567071, -7.658011], [33.566996, -7.657457], [33.566983, -7.657199], [33.566995, -7.656957], [33.566957, -7.656939], [33.566916, -7.656898], [33.566886, -7.656838], [33.566876, -7.656768], [33.566889, -7.656699], [33.566923, -7.65664], [33.566807, -7.656442], [33.566548, -7.656076], [33.566221, -7.65555], [33.566089, -7.655307], [33.565979, -7.655045], [33.565925, -7.654788], [33.565913, -7.65463], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_8d211c0cbe4edae48bec6424b1e7a27a = L.polyline(
+                [[33.541342, -7.644997], [33.541438, -7.644895], [33.541002, -7.644448], [33.540942, -7.644509], [33.541072, -7.646581], [33.541123, -7.647257], [33.54117, -7.647572], [33.542, -7.650431], [33.542113, -7.650695], [33.542334, -7.651436], [33.542424, -7.651843], [33.542476, -7.651968], [33.542559, -7.652128], [33.542678, -7.652302], [33.542814, -7.652458], [33.543212, -7.652786], [33.543545, -7.653015], [33.54365, -7.653053], [33.543684, -7.653043], [33.543756, -7.653049], [33.543821, -7.653086], [33.543869, -7.653151], [33.543894, -7.653232], [33.543895, -7.653271], [33.546055, -7.655687], [33.546126, -7.6557], [33.546194, -7.655674], [33.546472, -7.654964], [33.546597, -7.654716], [33.546753, -7.654425], [33.546884, -7.654218], [33.547113, -7.653905], [33.547493, -7.653469], [33.547756, -7.653225], [33.547953, -7.653068], [33.548515, -7.652711], [33.548806, -7.652564], [33.549185, -7.65242], [33.549226, -7.652363], [33.549268, -7.652358], [33.549305, -7.652384], [33.549624, -7.652272], [33.550347, -7.652024], [33.551103, -7.651792], [33.551145, -7.651779], [33.551256, -7.651745], [33.552098, -7.651489], [33.552181, -7.651467], [33.555408, -7.650579], [33.555418, -7.650544], [33.555458, -7.650464], [33.555554, -7.650383], [33.55564, -7.650365], [33.555726, -7.650385], [33.5558, -7.650441], [33.555852, -7.650525], [33.555874, -7.650614], [33.55586, -7.650751], [33.55616, -7.651132], [33.556453, -7.65159], [33.556599, -7.651894], [33.556818, -7.652432], [33.557024, -7.652871], [33.557072, -7.652972], [33.557267, -7.653405], [33.557561, -7.653969], [33.557947, -7.654662], [33.558388, -7.655411], [33.559119, -7.65668], [33.559284, -7.656968], [33.559354, -7.65691], [33.560593, -7.656094], [33.561545, -7.655429], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_d74fb000f6cff798bd8ed433dcffa5c8 = L.polyline(
+                [[33.535351, -7.652054], [33.535356, -7.652452], [33.535205, -7.652425], [33.535149, -7.652393], [33.5351, -7.652279], [33.535013, -7.650934], [33.53471, -7.650977], [33.534666, -7.650983], [33.53431, -7.651028], [33.534047, -7.651155], [33.533758, -7.651298], [33.533468, -7.651442], [33.533181, -7.65158], [33.533146, -7.651681], [33.53308, -7.651708], [33.533562, -7.653354], [33.533892, -7.654368], [33.534665, -7.656143], [33.534996, -7.656832], [33.536499, -7.659541], [33.536612, -7.659782], [33.536768, -7.660065], [33.536922, -7.660295], [33.537209, -7.660653], [33.538891, -7.662552], [33.5391, -7.662822], [33.539306, -7.663036], [33.539476, -7.663134], [33.539583, -7.663168], [33.539688, -7.663187], [33.539905, -7.663171], [33.540418, -7.663074], [33.540814, -7.662963], [33.541318, -7.662869], [33.541703, -7.662803], [33.542092, -7.662729], [33.542433, -7.66271], [33.542724, -7.662792], [33.542848, -7.662853], [33.542985, -7.662949], [33.543223, -7.663178], [33.543393, -7.663407], [33.544875, -7.662114], [33.544888, -7.661905], [33.544878, -7.661781], [33.544786, -7.661127], [33.544786, -7.661025], [33.544824, -7.660742], [33.545058, -7.659869], [33.545414, -7.658544], [33.545568, -7.658004], [33.545621, -7.657739], [33.54605, -7.656258], [33.546063, -7.656098], [33.54605, -7.656004], [33.546182, -7.656052], [33.546181, -7.655955], [33.546158, -7.655865], [33.546194, -7.655674], [33.546472, -7.654964], [33.546597, -7.654716], [33.546753, -7.654425], [33.546884, -7.654218], [33.547113, -7.653905], [33.547493, -7.653469], [33.547756, -7.653225], [33.547953, -7.653068], [33.548515, -7.652711], [33.548806, -7.652564], [33.549185, -7.65242], [33.549226, -7.652363], [33.549268, -7.652358], [33.549305, -7.652384], [33.549624, -7.652272], [33.550347, -7.652024], [33.551103, -7.651792], [33.551145, -7.651779], [33.551256, -7.651745], [33.552098, -7.651489], [33.552181, -7.651467], [33.555408, -7.650579], [33.555418, -7.650544], [33.555458, -7.650464], [33.555554, -7.650383], [33.55564, -7.650365], [33.555726, -7.650385], [33.5558, -7.650441], [33.555852, -7.650525], [33.555874, -7.650614], [33.55586, -7.650751], [33.55616, -7.651132], [33.556453, -7.65159], [33.556599, -7.651894], [33.556818, -7.652432], [33.557024, -7.652871], [33.557072, -7.652972], [33.557267, -7.653405], [33.557561, -7.653969], [33.557947, -7.654662], [33.558388, -7.655411], [33.559119, -7.65668], [33.559284, -7.656968], [33.559354, -7.65691], [33.560593, -7.656094], [33.561545, -7.655429], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_3bcf3571d0971ca60b7c89544d96600d = L.polyline(
+                [[33.535899, -7.666409], [33.53616, -7.665951], [33.53689, -7.664796], [33.537194, -7.664385], [33.537483, -7.663889], [33.537779, -7.663372], [33.538294, -7.662491], [33.538623, -7.661902], [33.539638, -7.660169], [33.539831, -7.65983], [33.539845, -7.659787], [33.542148, -7.655845], [33.542321, -7.655446], [33.542429, -7.655243], [33.543063, -7.654123], [33.543455, -7.653474], [33.543522, -7.653291], [33.543526, -7.653243], [33.54353, -7.653199], [33.543574, -7.65311], [33.54365, -7.653053], [33.543684, -7.653043], [33.543756, -7.653049], [33.543821, -7.653086], [33.543869, -7.653151], [33.543894, -7.653232], [33.543895, -7.653271], [33.546055, -7.655687], [33.546126, -7.6557], [33.546194, -7.655674], [33.546472, -7.654964], [33.546597, -7.654716], [33.546753, -7.654425], [33.546884, -7.654218], [33.547113, -7.653905], [33.547493, -7.653469], [33.547756, -7.653225], [33.547953, -7.653068], [33.548515, -7.652711], [33.548806, -7.652564], [33.549185, -7.65242], [33.549226, -7.652363], [33.549268, -7.652358], [33.549305, -7.652384], [33.549624, -7.652272], [33.550347, -7.652024], [33.551103, -7.651792], [33.551145, -7.651779], [33.551256, -7.651745], [33.552098, -7.651489], [33.552181, -7.651467], [33.555408, -7.650579], [33.555418, -7.650544], [33.555458, -7.650464], [33.555554, -7.650383], [33.55564, -7.650365], [33.555726, -7.650385], [33.5558, -7.650441], [33.555852, -7.650525], [33.555874, -7.650614], [33.55586, -7.650751], [33.55616, -7.651132], [33.556453, -7.65159], [33.556599, -7.651894], [33.556818, -7.652432], [33.557024, -7.652871], [33.557072, -7.652972], [33.557267, -7.653405], [33.557561, -7.653969], [33.557947, -7.654662], [33.558388, -7.655411], [33.559119, -7.65668], [33.559284, -7.656968], [33.559354, -7.65691], [33.560593, -7.656094], [33.561545, -7.655429], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_647175d17977ba44dd82ac997bfe2c63 = L.polyline(
+                [[33.544786, -7.661078], [33.544786, -7.661025], [33.544824, -7.660742], [33.545058, -7.659869], [33.545414, -7.658544], [33.545568, -7.658004], [33.545621, -7.657739], [33.54605, -7.656258], [33.546063, -7.656098], [33.54605, -7.656004], [33.546182, -7.656052], [33.546181, -7.655955], [33.546158, -7.655865], [33.546194, -7.655674], [33.546472, -7.654964], [33.546597, -7.654716], [33.546753, -7.654425], [33.546884, -7.654218], [33.547113, -7.653905], [33.547493, -7.653469], [33.547756, -7.653225], [33.547953, -7.653068], [33.548515, -7.652711], [33.548806, -7.652564], [33.549185, -7.65242], [33.549226, -7.652363], [33.549268, -7.652358], [33.549305, -7.652384], [33.549624, -7.652272], [33.550347, -7.652024], [33.551103, -7.651792], [33.551145, -7.651779], [33.551256, -7.651745], [33.552098, -7.651489], [33.552181, -7.651467], [33.555408, -7.650579], [33.555418, -7.650544], [33.555458, -7.650464], [33.555554, -7.650383], [33.55564, -7.650365], [33.555726, -7.650385], [33.5558, -7.650441], [33.555852, -7.650525], [33.555874, -7.650614], [33.55586, -7.650751], [33.55616, -7.651132], [33.556453, -7.65159], [33.556599, -7.651894], [33.556818, -7.652432], [33.557024, -7.652871], [33.557072, -7.652972], [33.557267, -7.653405], [33.557561, -7.653969], [33.557947, -7.654662], [33.558388, -7.655411], [33.559119, -7.65668], [33.559284, -7.656968], [33.559354, -7.65691], [33.560593, -7.656094], [33.561545, -7.655429], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_ee196e56272285ceb606e0bcb099e272 = L.polyline(
+                [[33.546814, -7.65433], [33.546884, -7.654218], [33.547113, -7.653905], [33.547493, -7.653469], [33.547756, -7.653225], [33.547953, -7.653068], [33.548515, -7.652711], [33.548806, -7.652564], [33.549185, -7.65242], [33.549226, -7.652363], [33.549268, -7.652358], [33.549305, -7.652384], [33.549624, -7.652272], [33.550347, -7.652024], [33.551103, -7.651792], [33.551145, -7.651779], [33.551256, -7.651745], [33.552098, -7.651489], [33.552181, -7.651467], [33.555408, -7.650579], [33.555418, -7.650544], [33.555458, -7.650464], [33.555554, -7.650383], [33.55564, -7.650365], [33.555726, -7.650385], [33.5558, -7.650441], [33.555852, -7.650525], [33.555874, -7.650614], [33.55586, -7.650751], [33.55616, -7.651132], [33.556453, -7.65159], [33.556599, -7.651894], [33.556818, -7.652432], [33.557024, -7.652871], [33.557072, -7.652972], [33.557267, -7.653405], [33.557561, -7.653969], [33.557947, -7.654662], [33.558388, -7.655411], [33.559119, -7.65668], [33.559284, -7.656968], [33.559354, -7.65691], [33.560593, -7.656094], [33.561545, -7.655429], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "beige", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_bc57673a5271e3a76fdbab045051b575 = L.polyline(
+                [[33.545861, -7.647519], [33.545857, -7.647549], [33.545874, -7.647849], [33.545927, -7.647953], [33.545966, -7.647986], [33.546072, -7.648028], [33.546085, -7.648021], [33.546175, -7.648001], [33.546263, -7.648028], [33.546334, -7.648095], [33.546376, -7.648192], [33.546384, -7.648249], [33.546374, -7.648338], [33.546338, -7.648418], [33.546249, -7.648498], [33.546235, -7.648503], [33.546171, -7.648619], [33.546093, -7.648827], [33.545788, -7.649919], [33.545656, -7.65026], [33.545224, -7.651051], [33.544711, -7.651943], [33.544498, -7.652315], [33.54413, -7.652957], [33.543894, -7.653232], [33.543895, -7.653271], [33.546055, -7.655687], [33.546126, -7.6557], [33.546194, -7.655674], [33.546472, -7.654964], [33.546597, -7.654716], [33.546753, -7.654425], [33.546884, -7.654218], [33.547113, -7.653905], [33.547493, -7.653469], [33.547756, -7.653225], [33.547953, -7.653068], [33.548515, -7.652711], [33.548806, -7.652564], [33.549185, -7.65242], [33.549226, -7.652363], [33.549268, -7.652358], [33.549305, -7.652384], [33.549624, -7.652272], [33.550347, -7.652024], [33.551103, -7.651792], [33.551145, -7.651779], [33.551256, -7.651745], [33.552098, -7.651489], [33.552181, -7.651467], [33.555408, -7.650579], [33.555418, -7.650544], [33.555458, -7.650464], [33.555554, -7.650383], [33.55564, -7.650365], [33.555726, -7.650385], [33.5558, -7.650441], [33.555852, -7.650525], [33.555874, -7.650614], [33.55586, -7.650751], [33.55616, -7.651132], [33.556453, -7.65159], [33.556599, -7.651894], [33.556818, -7.652432], [33.557024, -7.652871], [33.557072, -7.652972], [33.557267, -7.653405], [33.557561, -7.653969], [33.557947, -7.654662], [33.558388, -7.655411], [33.559119, -7.65668], [33.559284, -7.656968], [33.559354, -7.65691], [33.560593, -7.656094], [33.561545, -7.655429], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_8d6a7ded3228821e1633f2ba25493e69 = L.polyline(
+                [[33.545143, -7.623404], [33.545403, -7.623495], [33.545836, -7.623645], [33.545991, -7.623016], [33.546175, -7.622212], [33.546302, -7.62158], [33.546331, -7.621469], [33.547718, -7.621953], [33.549344, -7.622524], [33.549377, -7.622476], [33.54942, -7.62245], [33.549471, -7.622441], [33.549524, -7.622456], [33.549585, -7.622514], [33.549611, -7.622609], [33.549856, -7.622707], [33.551054, -7.622983], [33.55165, -7.623094], [33.552813, -7.623277], [33.55318, -7.62333], [33.553285, -7.623346], [33.553694, -7.623416], [33.554129, -7.623499], [33.555285, -7.623749], [33.555949, -7.623917], [33.557012, -7.624294], [33.557183, -7.624358], [33.557203, -7.624357], [33.557236, -7.624368], [33.557267, -7.624402], [33.557274, -7.624419], [33.557278, -7.624475], [33.557249, -7.62453], [33.557224, -7.624547], [33.557156, -7.624722], [33.556495, -7.626926], [33.556465, -7.627165], [33.556484, -7.627227], [33.556483, -7.627293], [33.55646, -7.627353], [33.55642, -7.627398], [33.556369, -7.627422], [33.556292, -7.62763], [33.556174, -7.628051], [33.556118, -7.628259], [33.55561, -7.629975], [33.555583, -7.630185], [33.555583, -7.630367], [33.555602, -7.630524], [33.555831, -7.631312], [33.556476, -7.633212], [33.55654, -7.633393], [33.556798, -7.634129], [33.55698, -7.634622], [33.557065, -7.634806], [33.557153, -7.63496], [33.557388, -7.6353], [33.558021, -7.636215], [33.558561, -7.636998], [33.559174, -7.63787], [33.560048, -7.639128], [33.560469, -7.639714], [33.560715, -7.640083], [33.561264, -7.640873], [33.561807, -7.641663], [33.562282, -7.642437], [33.562746, -7.643164], [33.563518, -7.644411], [33.563621, -7.644575], [33.563891, -7.644993], [33.564451, -7.645864], [33.564651, -7.646179], [33.565009, -7.646731], [33.565099, -7.646903], [33.565121, -7.647074], [33.565103, -7.647284], [33.565057, -7.647489], [33.565026, -7.64768], [33.565053, -7.647898], [33.565232, -7.648413], [33.565691, -7.649629], [33.56591, -7.650205], [33.565975, -7.650406], [33.566037, -7.6507], [33.566052, -7.650857], [33.566055, -7.651361], [33.566042, -7.652798], [33.566034, -7.654174], [33.566032, -7.654231], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_fc58392ded26e387d46cf93a9f1bd8b6 = L.polyline(
+                [[33.581581, -7.623855], [33.581664, -7.623759], [33.581686, -7.623656], [33.581669, -7.623559], [33.581616, -7.623477], [33.581551, -7.623436], [33.581378, -7.623428], [33.581312, -7.623388], [33.581137, -7.623043], [33.581457, -7.622931], [33.581518, -7.622868], [33.581544, -7.622932], [33.581687, -7.623306], [33.581972, -7.623951], [33.58216, -7.623857], [33.583299, -7.623331], [33.583408, -7.623282], [33.583442, -7.623487], [33.583715, -7.625135], [33.583841, -7.625994], [33.58396, -7.626541], [33.584014, -7.626731], [33.584101, -7.626952], [33.584163, -7.62709], [33.584522, -7.627725], [33.584638, -7.627926], [33.585023, -7.628571], [33.585602, -7.629482], [33.585661, -7.629573], [33.585553, -7.62969], [33.585287, -7.629959], [33.584539, -7.630792], [33.584089, -7.631269], [33.583723, -7.631616], [33.583371, -7.631954], [33.582959, -7.632338], [33.582683, -7.632591], [33.582405, -7.632861], [33.582106, -7.633143], [33.581829, -7.633404], [33.581562, -7.633673], [33.581124, -7.634115], [33.580968, -7.634282], [33.580686, -7.634575], [33.58043, -7.634834], [33.580162, -7.63511], [33.579484, -7.635813], [33.579507, -7.63586], [33.57951, -7.635927], [33.579465, -7.636003], [33.579404, -7.636023], [33.579351, -7.636001], [33.579035, -7.636369], [33.578891, -7.636479], [33.57867, -7.63661], [33.578524, -7.636703], [33.578013, -7.637147], [33.577788, -7.637352], [33.577435, -7.637673], [33.577382, -7.637722], [33.576424, -7.6386], [33.576112, -7.638856], [33.575934, -7.639003], [33.575545, -7.639315], [33.575189, -7.639611], [33.575011, -7.639761], [33.574598, -7.640093], [33.574258, -7.640373], [33.574058, -7.640526], [33.573881, -7.640659], [33.573757, -7.64079], [33.573692, -7.640872], [33.573658, -7.640883], [33.573598, -7.64087], [33.572866, -7.64144], [33.572297, -7.641907], [33.5719, -7.642214], [33.571491, -7.642533], [33.570966, -7.642963], [33.57081, -7.643093], [33.570108, -7.643657], [33.569697, -7.643985], [33.569472, -7.644127], [33.56937, -7.644169], [33.569296, -7.644288], [33.568764, -7.644726], [33.568183, -7.645203], [33.567547, -7.645692], [33.567271, -7.645906], [33.56656, -7.646436], [33.566015, -7.646817], [33.565509, -7.647141], [33.565233, -7.647339], [33.565057, -7.647489], [33.565026, -7.64768], [33.565053, -7.647898], [33.565232, -7.648413], [33.565691, -7.649629], [33.56591, -7.650205], [33.565975, -7.650406], [33.566037, -7.6507], [33.566052, -7.650857], [33.566055, -7.651361], [33.566042, -7.652798], [33.566034, -7.654174], [33.566032, -7.654231], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_64b039591c8ed623d33155d241597727 = L.polyline(
+                [[33.577392, -7.630707], [33.577611, -7.630584], [33.577718, -7.631194], [33.577902, -7.632243], [33.577614, -7.63245], [33.577188, -7.632986], [33.577515, -7.633348], [33.577534, -7.633394], [33.577531, -7.63352], [33.577623, -7.633521], [33.57773, -7.633577], [33.577805, -7.633684], [33.577828, -7.633759], [33.577833, -7.633855], [33.577813, -7.633948], [33.577771, -7.634029], [33.577711, -7.634091], [33.577628, -7.634131], [33.577506, -7.634126], [33.577432, -7.634085], [33.577349, -7.633978], [33.577321, -7.633886], [33.577166, -7.633874], [33.576997, -7.633912], [33.576471, -7.63409], [33.575808, -7.634302], [33.574657, -7.634657], [33.574309, -7.634765], [33.57234, -7.63535], [33.572082, -7.635731], [33.571972, -7.635943], [33.572164, -7.637028], [33.572216, -7.637187], [33.572652, -7.638297], [33.572673, -7.63835], [33.572878, -7.638876], [33.572945, -7.639041], [33.573577, -7.640635], [33.573605, -7.640615], [33.57367, -7.640608], [33.573728, -7.640644], [33.573748, -7.640676], [33.57376, -7.640712], [33.573757, -7.64079], [33.573692, -7.640872], [33.573658, -7.640883], [33.573598, -7.64087], [33.572866, -7.64144], [33.572297, -7.641907], [33.5719, -7.642214], [33.571491, -7.642533], [33.570966, -7.642963], [33.57081, -7.643093], [33.570108, -7.643657], [33.569697, -7.643985], [33.569472, -7.644127], [33.56937, -7.644169], [33.569296, -7.644288], [33.568764, -7.644726], [33.568183, -7.645203], [33.567547, -7.645692], [33.567271, -7.645906], [33.56656, -7.646436], [33.566015, -7.646817], [33.565509, -7.647141], [33.565233, -7.647339], [33.565057, -7.647489], [33.565026, -7.64768], [33.565053, -7.647898], [33.565232, -7.648413], [33.565691, -7.649629], [33.56591, -7.650205], [33.565975, -7.650406], [33.566037, -7.6507], [33.566052, -7.650857], [33.566055, -7.651361], [33.566042, -7.652798], [33.566034, -7.654174], [33.566032, -7.654231], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_59d9b355e7ab56273505772f232d3650 = L.polyline(
+                [[33.572259, -7.63547], [33.572082, -7.635731], [33.571972, -7.635943], [33.572164, -7.637028], [33.572216, -7.637187], [33.572652, -7.638297], [33.572673, -7.63835], [33.572878, -7.638876], [33.572945, -7.639041], [33.573577, -7.640635], [33.573605, -7.640615], [33.57367, -7.640608], [33.573728, -7.640644], [33.573748, -7.640676], [33.57376, -7.640712], [33.573757, -7.64079], [33.573692, -7.640872], [33.573658, -7.640883], [33.573598, -7.64087], [33.572866, -7.64144], [33.572297, -7.641907], [33.5719, -7.642214], [33.571491, -7.642533], [33.570966, -7.642963], [33.57081, -7.643093], [33.570108, -7.643657], [33.569697, -7.643985], [33.569472, -7.644127], [33.56937, -7.644169], [33.569296, -7.644288], [33.568764, -7.644726], [33.568183, -7.645203], [33.567547, -7.645692], [33.567271, -7.645906], [33.56656, -7.646436], [33.566015, -7.646817], [33.565509, -7.647141], [33.565233, -7.647339], [33.565057, -7.647489], [33.565026, -7.64768], [33.565053, -7.647898], [33.565232, -7.648413], [33.565691, -7.649629], [33.56591, -7.650205], [33.565975, -7.650406], [33.566037, -7.6507], [33.566052, -7.650857], [33.566055, -7.651361], [33.566042, -7.652798], [33.566034, -7.654174], [33.566032, -7.654231], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_b03d9821965a8b235dc8a7ed4d6b56fc = L.polyline(
+                [[33.56976, -7.652036], [33.569314, -7.653057], [33.568986, -7.653646], [33.568138, -7.654974], [33.567375, -7.656241], [33.567282, -7.656383], [33.567214, -7.656536], [33.567173, -7.656692], [33.567186, -7.65674], [33.567179, -7.656839], [33.56716, -7.656883], [33.567095, -7.656945], [33.566995, -7.656957], [33.566957, -7.656939], [33.566916, -7.656898], [33.566886, -7.656838], [33.566876, -7.656768], [33.566889, -7.656699], [33.566923, -7.65664], [33.566807, -7.656442], [33.566548, -7.656076], [33.566221, -7.65555], [33.566089, -7.655307], [33.565979, -7.655045], [33.565925, -7.654788], [33.565913, -7.65463], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_813b8ec99cccdcb8c53e9fac99aa266a = L.polyline(
+                [[33.586093, -7.673907], [33.58582, -7.673882], [33.585497, -7.673948], [33.585196, -7.674032], [33.584753, -7.674174], [33.584601, -7.674218], [33.584479, -7.674244], [33.584263, -7.67424], [33.583757, -7.674054], [33.583526, -7.674102], [33.583004, -7.675868], [33.582943, -7.675943], [33.582817, -7.676014], [33.582691, -7.676095], [33.582647, -7.675998], [33.582468, -7.675592], [33.582354, -7.675397], [33.582168, -7.675202], [33.582073, -7.675138], [33.581983, -7.675094], [33.581842, -7.675057], [33.58094, -7.674917], [33.5803, -7.674788], [33.580252, -7.674856], [33.580228, -7.67477], [33.579523, -7.674585], [33.579328, -7.674525], [33.578576, -7.674216], [33.578435, -7.674153], [33.57754, -7.673748], [33.577284, -7.673592], [33.577118, -7.67348], [33.576771, -7.673204], [33.576687, -7.673143], [33.576497, -7.673002], [33.576397, -7.672931], [33.576057, -7.672658], [33.575776, -7.67243], [33.575439, -7.672209], [33.575109, -7.672008], [33.574793, -7.671815], [33.574445, -7.671601], [33.574152, -7.671401], [33.574046, -7.671317], [33.57383, -7.671111], [33.5737, -7.67097], [33.573572, -7.670793], [33.573375, -7.670503], [33.573244, -7.670345], [33.572991, -7.670139], [33.572532, -7.669849], [33.572172, -7.669637], [33.571836, -7.669425], [33.571514, -7.669225], [33.57144, -7.669178], [33.570805, -7.668765], [33.570503, -7.668476], [33.570264, -7.668153], [33.570214, -7.668094], [33.57022, -7.667909], [33.570217, -7.667815], [33.57021, -7.667573], [33.570115, -7.666172], [33.569963, -7.664662], [33.569829, -7.663602], [33.569743, -7.662758], [33.569713, -7.662564], [33.569634, -7.662355], [33.569366, -7.661874], [33.568956, -7.661196], [33.568073, -7.659679], [33.567689, -7.659089], [33.567329, -7.658622], [33.567195, -7.658389], [33.567136, -7.658243], [33.567071, -7.658011], [33.566996, -7.657457], [33.566983, -7.657199], [33.566995, -7.656957], [33.566957, -7.656939], [33.566916, -7.656898], [33.566886, -7.656838], [33.566876, -7.656768], [33.566889, -7.656699], [33.566923, -7.65664], [33.566807, -7.656442], [33.566548, -7.656076], [33.566221, -7.65555], [33.566089, -7.655307], [33.565979, -7.655045], [33.565925, -7.654788], [33.565913, -7.65463], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_6f12425d4cd77c466fb864b47b125156 = L.polyline(
+                [[33.593266, -7.659195], [33.593204, -7.659137], [33.593186, -7.659048], [33.593227, -7.658352], [33.594347, -7.658476], [33.594342, -7.658317], [33.594366, -7.658168], [33.594467, -7.657856], [33.593694, -7.657605], [33.593093, -7.657425], [33.592379, -7.657213], [33.591456, -7.656951], [33.591303, -7.656938], [33.591296, -7.656975], [33.591254, -7.657031], [33.591224, -7.657043], [33.591162, -7.65703], [33.591121, -7.656974], [33.591124, -7.656884], [33.591045, -7.656566], [33.59044, -7.654043], [33.590181, -7.653959], [33.589458, -7.653848], [33.589205, -7.653768], [33.588319, -7.65326], [33.587451, -7.652758], [33.586262, -7.652091], [33.586218, -7.652161], [33.586148, -7.652185], [33.586074, -7.652147], [33.58604, -7.652058], [33.586051, -7.651991], [33.586088, -7.651938], [33.585535, -7.651343], [33.584897, -7.650669], [33.5847, -7.650475], [33.584615, -7.650412], [33.584575, -7.650379], [33.584515, -7.650359], [33.583392, -7.651094], [33.582068, -7.651945], [33.581379, -7.652387], [33.58097, -7.652736], [33.580662, -7.653047], [33.580509, -7.653208], [33.580245, -7.653536], [33.579863, -7.65407], [33.579452, -7.654666], [33.578985, -7.655288], [33.579014, -7.655392], [33.579011, -7.655448], [33.578971, -7.655546], [33.578896, -7.655609], [33.57883, -7.655622], [33.578767, -7.655607], [33.578693, -7.655535], [33.578656, -7.655431], [33.578667, -7.655327], [33.576849, -7.653391], [33.575638, -7.652065], [33.574029, -7.650251], [33.573919, -7.650127], [33.572684, -7.648773], [33.572037, -7.648033], [33.571945, -7.648036], [33.571267, -7.649261], [33.570771, -7.650093], [33.570441, -7.650631], [33.570066, -7.651338], [33.569994, -7.651501], [33.569314, -7.653057], [33.568986, -7.653646], [33.568138, -7.654974], [33.567375, -7.656241], [33.567282, -7.656383], [33.567214, -7.656536], [33.567173, -7.656692], [33.567186, -7.65674], [33.567179, -7.656839], [33.56716, -7.656883], [33.567095, -7.656945], [33.566995, -7.656957], [33.566957, -7.656939], [33.566916, -7.656898], [33.566886, -7.656838], [33.566876, -7.656768], [33.566889, -7.656699], [33.566923, -7.65664], [33.566807, -7.656442], [33.566548, -7.656076], [33.566221, -7.65555], [33.566089, -7.655307], [33.565979, -7.655045], [33.565925, -7.654788], [33.565913, -7.65463], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_07ca1f262f272cb64720eba3a1459018 = L.polyline(
+                [[33.598321, -7.64904], [33.598319, -7.648854], [33.597714, -7.648808], [33.597213, -7.64868], [33.59684, -7.648521], [33.59664, -7.648411], [33.596436, -7.648244], [33.59632, -7.648081], [33.595634, -7.649475], [33.59493, -7.650973], [33.59435, -7.652259], [33.593425, -7.654276], [33.593355, -7.654431], [33.592521, -7.654304], [33.590967, -7.654096], [33.590585, -7.65406], [33.59044, -7.654043], [33.590181, -7.653959], [33.589458, -7.653848], [33.589205, -7.653768], [33.588319, -7.65326], [33.587451, -7.652758], [33.586262, -7.652091], [33.586218, -7.652161], [33.586148, -7.652185], [33.586074, -7.652147], [33.58604, -7.652058], [33.586051, -7.651991], [33.586088, -7.651938], [33.585535, -7.651343], [33.584897, -7.650669], [33.5847, -7.650475], [33.584615, -7.650412], [33.584575, -7.650379], [33.584515, -7.650359], [33.583392, -7.651094], [33.582068, -7.651945], [33.581379, -7.652387], [33.58097, -7.652736], [33.580662, -7.653047], [33.580509, -7.653208], [33.580245, -7.653536], [33.579863, -7.65407], [33.579452, -7.654666], [33.578985, -7.655288], [33.579014, -7.655392], [33.579011, -7.655448], [33.578971, -7.655546], [33.578896, -7.655609], [33.57883, -7.655622], [33.578767, -7.655607], [33.578693, -7.655535], [33.578656, -7.655431], [33.578667, -7.655327], [33.576849, -7.653391], [33.575638, -7.652065], [33.574029, -7.650251], [33.573919, -7.650127], [33.572684, -7.648773], [33.572037, -7.648033], [33.571945, -7.648036], [33.571267, -7.649261], [33.570771, -7.650093], [33.570441, -7.650631], [33.570066, -7.651338], [33.569994, -7.651501], [33.569314, -7.653057], [33.568986, -7.653646], [33.568138, -7.654974], [33.567375, -7.656241], [33.567282, -7.656383], [33.567214, -7.656536], [33.567173, -7.656692], [33.567186, -7.65674], [33.567179, -7.656839], [33.56716, -7.656883], [33.567095, -7.656945], [33.566995, -7.656957], [33.566957, -7.656939], [33.566916, -7.656898], [33.566886, -7.656838], [33.566876, -7.656768], [33.566889, -7.656699], [33.566923, -7.65664], [33.566807, -7.656442], [33.566548, -7.656076], [33.566221, -7.65555], [33.566089, -7.655307], [33.565979, -7.655045], [33.565925, -7.654788], [33.565913, -7.65463], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_47525392db0f1b51dfa1048fa7bd761a = L.polyline(
+                [[33.600889, -7.640239], [33.600603, -7.640587], [33.600482, -7.640428], [33.600384, -7.640251], [33.600321, -7.640179], [33.600309, -7.640194], [33.600277, -7.640213], [33.600209, -7.640198], [33.600173, -7.640131], [33.600174, -7.64009], [33.600213, -7.640025], [33.600277, -7.639848], [33.600293, -7.639093], [33.599558, -7.638963], [33.598546, -7.638751], [33.598389, -7.638706], [33.597826, -7.638597], [33.597415, -7.638524], [33.596528, -7.638349], [33.596008, -7.638258], [33.595874, -7.638228], [33.594103, -7.637912], [33.594016, -7.637885], [33.593411, -7.637598], [33.592924, -7.637392], [33.592808, -7.637341], [33.591858, -7.636692], [33.591263, -7.636306], [33.591069, -7.636217], [33.590977, -7.636244], [33.590929, -7.636234], [33.590866, -7.63619], [33.590814, -7.636086], [33.590812, -7.635997], [33.590491, -7.635632], [33.590115, -7.635269], [33.58949, -7.634626], [33.589083, -7.634255], [33.588543, -7.633721], [33.588158, -7.633333], [33.58773, -7.632913], [33.587023, -7.63212], [33.586909, -7.631949], [33.586632, -7.631497], [33.586305, -7.630921], [33.585825, -7.630135], [33.585553, -7.62969], [33.585287, -7.629959], [33.584539, -7.630792], [33.584089, -7.631269], [33.583723, -7.631616], [33.583371, -7.631954], [33.582959, -7.632338], [33.582683, -7.632591], [33.582405, -7.632861], [33.582106, -7.633143], [33.581829, -7.633404], [33.581562, -7.633673], [33.581124, -7.634115], [33.580968, -7.634282], [33.580686, -7.634575], [33.58043, -7.634834], [33.580162, -7.63511], [33.579484, -7.635813], [33.579507, -7.63586], [33.57951, -7.635927], [33.579465, -7.636003], [33.579404, -7.636023], [33.579351, -7.636001], [33.579035, -7.636369], [33.578891, -7.636479], [33.57867, -7.63661], [33.578524, -7.636703], [33.578013, -7.637147], [33.577788, -7.637352], [33.577435, -7.637673], [33.577382, -7.637722], [33.576424, -7.6386], [33.576112, -7.638856], [33.575934, -7.639003], [33.575545, -7.639315], [33.575189, -7.639611], [33.575011, -7.639761], [33.574598, -7.640093], [33.574258, -7.640373], [33.574058, -7.640526], [33.573881, -7.640659], [33.573757, -7.64079], [33.573692, -7.640872], [33.573658, -7.640883], [33.573598, -7.64087], [33.572866, -7.64144], [33.572297, -7.641907], [33.5719, -7.642214], [33.571491, -7.642533], [33.570966, -7.642963], [33.57081, -7.643093], [33.570108, -7.643657], [33.569697, -7.643985], [33.569472, -7.644127], [33.56937, -7.644169], [33.569296, -7.644288], [33.568764, -7.644726], [33.568183, -7.645203], [33.567547, -7.645692], [33.567271, -7.645906], [33.56656, -7.646436], [33.566015, -7.646817], [33.565509, -7.647141], [33.565233, -7.647339], [33.565057, -7.647489], [33.565026, -7.64768], [33.565053, -7.647898], [33.565232, -7.648413], [33.565691, -7.649629], [33.56591, -7.650205], [33.565975, -7.650406], [33.566037, -7.6507], [33.566052, -7.650857], [33.566055, -7.651361], [33.566042, -7.652798], [33.566034, -7.654174], [33.566032, -7.654231], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "beige", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_9690314062db83b3cff33fc58d8eeacc = L.polyline(
+                [[33.595307, -7.656946], [33.594913, -7.656775], [33.594467, -7.657856], [33.593694, -7.657605], [33.593093, -7.657425], [33.592379, -7.657213], [33.591456, -7.656951], [33.591303, -7.656938], [33.591296, -7.656975], [33.591254, -7.657031], [33.591224, -7.657043], [33.591162, -7.65703], [33.591121, -7.656974], [33.591124, -7.656884], [33.591045, -7.656566], [33.59044, -7.654043], [33.590181, -7.653959], [33.589458, -7.653848], [33.589205, -7.653768], [33.588319, -7.65326], [33.587451, -7.652758], [33.586262, -7.652091], [33.586218, -7.652161], [33.586148, -7.652185], [33.586074, -7.652147], [33.58604, -7.652058], [33.586051, -7.651991], [33.586088, -7.651938], [33.585535, -7.651343], [33.584897, -7.650669], [33.5847, -7.650475], [33.584615, -7.650412], [33.584575, -7.650379], [33.584515, -7.650359], [33.583392, -7.651094], [33.582068, -7.651945], [33.581379, -7.652387], [33.58097, -7.652736], [33.580662, -7.653047], [33.580509, -7.653208], [33.580245, -7.653536], [33.579863, -7.65407], [33.579452, -7.654666], [33.578985, -7.655288], [33.579014, -7.655392], [33.579011, -7.655448], [33.578971, -7.655546], [33.578896, -7.655609], [33.57883, -7.655622], [33.578767, -7.655607], [33.578693, -7.655535], [33.578656, -7.655431], [33.578667, -7.655327], [33.576849, -7.653391], [33.575638, -7.652065], [33.574029, -7.650251], [33.573919, -7.650127], [33.572684, -7.648773], [33.572037, -7.648033], [33.571945, -7.648036], [33.571267, -7.649261], [33.570771, -7.650093], [33.570441, -7.650631], [33.570066, -7.651338], [33.569994, -7.651501], [33.569314, -7.653057], [33.568986, -7.653646], [33.568138, -7.654974], [33.567375, -7.656241], [33.567282, -7.656383], [33.567214, -7.656536], [33.567173, -7.656692], [33.567186, -7.65674], [33.567179, -7.656839], [33.56716, -7.656883], [33.567095, -7.656945], [33.566995, -7.656957], [33.566957, -7.656939], [33.566916, -7.656898], [33.566886, -7.656838], [33.566876, -7.656768], [33.566889, -7.656699], [33.566923, -7.65664], [33.566807, -7.656442], [33.566548, -7.656076], [33.566221, -7.65555], [33.566089, -7.655307], [33.565979, -7.655045], [33.565925, -7.654788], [33.565913, -7.65463], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_a0f38838c645e960aaa57fb1c57f43a2 = L.polyline(
+                [[33.594347, -7.664568], [33.594341, -7.664607], [33.594316, -7.66482], [33.594307, -7.665016], [33.594319, -7.665316], [33.594357, -7.665515], [33.594448, -7.665783], [33.594684, -7.666235], [33.594118, -7.666778], [33.593935, -7.666905], [33.593953, -7.666971], [33.593932, -7.667064], [33.593869, -7.667123], [33.593829, -7.667131], [33.593745, -7.667092], [33.593501, -7.666994], [33.593265, -7.666929], [33.592078, -7.666691], [33.591495, -7.666693], [33.591288, -7.666712], [33.591016, -7.666763], [33.590811, -7.666809], [33.589481, -7.667113], [33.589228, -7.667169], [33.58829, -7.667377], [33.587424, -7.66757], [33.587346, -7.667595], [33.587217, -7.667647], [33.587173, -7.6677], [33.587131, -7.667699], [33.587089, -7.66765], [33.586959, -7.667652], [33.586686, -7.667704], [33.586379, -7.667687], [33.586143, -7.667628], [33.585885, -7.667494], [33.585684, -7.667336], [33.585554, -7.667216], [33.585365, -7.666977], [33.585146, -7.666626], [33.584961, -7.666255], [33.584369, -7.665081], [33.583822, -7.664034], [33.583353, -7.663149], [33.582993, -7.662398], [33.582796, -7.662144], [33.582601, -7.661913], [33.582401, -7.661656], [33.582346, -7.661702], [33.582265, -7.661722], [33.582229, -7.661717], [33.582169, -7.661687], [33.582122, -7.661634], [33.582094, -7.661572], [33.582084, -7.661503], [33.582112, -7.661381], [33.582147, -7.661332], [33.582142, -7.661035], [33.582092, -7.660876], [33.580092, -7.657023], [33.579983, -7.656843], [33.579674, -7.656396], [33.579331, -7.65599], [33.579035, -7.655686], [33.578896, -7.655609], [33.57883, -7.655622], [33.578767, -7.655607], [33.578693, -7.655535], [33.578656, -7.655431], [33.578667, -7.655327], [33.576849, -7.653391], [33.575638, -7.652065], [33.574029, -7.650251], [33.573919, -7.650127], [33.572684, -7.648773], [33.572037, -7.648033], [33.571945, -7.648036], [33.571267, -7.649261], [33.570771, -7.650093], [33.570441, -7.650631], [33.570066, -7.651338], [33.569994, -7.651501], [33.569314, -7.653057], [33.568986, -7.653646], [33.568138, -7.654974], [33.567375, -7.656241], [33.567282, -7.656383], [33.567214, -7.656536], [33.567173, -7.656692], [33.567186, -7.65674], [33.567179, -7.656839], [33.56716, -7.656883], [33.567095, -7.656945], [33.566995, -7.656957], [33.566957, -7.656939], [33.566916, -7.656898], [33.566886, -7.656838], [33.566876, -7.656768], [33.566889, -7.656699], [33.566923, -7.65664], [33.566807, -7.656442], [33.566548, -7.656076], [33.566221, -7.65555], [33.566089, -7.655307], [33.565979, -7.655045], [33.565925, -7.654788], [33.565913, -7.65463], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_783e5ff6fcca4c434833f2a60b2d4141 = L.polyline(
+                [[33.581937, -7.686319], [33.582524, -7.68614], [33.582757, -7.68609], [33.582835, -7.686082], [33.582834, -7.685729], [33.582891, -7.68397], [33.582902, -7.683071], [33.582852, -7.683024], [33.582841, -7.682991], [33.582849, -7.682921], [33.582867, -7.682893], [33.582837, -7.682591], [33.582638, -7.681479], [33.582568, -7.681004], [33.58255, -7.680462], [33.582562, -7.680043], [33.5826, -7.679602], [33.582623, -7.679374], [33.582706, -7.678703], [33.582772, -7.678044], [33.582859, -7.677291], [33.582938, -7.677093], [33.582957, -7.677054], [33.58304, -7.676895], [33.582959, -7.676704], [33.582691, -7.676095], [33.582647, -7.675998], [33.582468, -7.675592], [33.582354, -7.675397], [33.582168, -7.675202], [33.582073, -7.675138], [33.581983, -7.675094], [33.581842, -7.675057], [33.58094, -7.674917], [33.5803, -7.674788], [33.580252, -7.674856], [33.580228, -7.67477], [33.579523, -7.674585], [33.579328, -7.674525], [33.578576, -7.674216], [33.578435, -7.674153], [33.57754, -7.673748], [33.577284, -7.673592], [33.577118, -7.67348], [33.576771, -7.673204], [33.576687, -7.673143], [33.576497, -7.673002], [33.576397, -7.672931], [33.576057, -7.672658], [33.575776, -7.67243], [33.575439, -7.672209], [33.575109, -7.672008], [33.574793, -7.671815], [33.574445, -7.671601], [33.574152, -7.671401], [33.574046, -7.671317], [33.57383, -7.671111], [33.5737, -7.67097], [33.573572, -7.670793], [33.573375, -7.670503], [33.573244, -7.670345], [33.572991, -7.670139], [33.572532, -7.669849], [33.572172, -7.669637], [33.571836, -7.669425], [33.571514, -7.669225], [33.57144, -7.669178], [33.570805, -7.668765], [33.570503, -7.668476], [33.570264, -7.668153], [33.570214, -7.668094], [33.57022, -7.667909], [33.570217, -7.667815], [33.57021, -7.667573], [33.570115, -7.666172], [33.569963, -7.664662], [33.569829, -7.663602], [33.569743, -7.662758], [33.569713, -7.662564], [33.569634, -7.662355], [33.569366, -7.661874], [33.568956, -7.661196], [33.568073, -7.659679], [33.567689, -7.659089], [33.567329, -7.658622], [33.567195, -7.658389], [33.567136, -7.658243], [33.567071, -7.658011], [33.566996, -7.657457], [33.566983, -7.657199], [33.566995, -7.656957], [33.566957, -7.656939], [33.566916, -7.656898], [33.566886, -7.656838], [33.566876, -7.656768], [33.566889, -7.656699], [33.566923, -7.65664], [33.566807, -7.656442], [33.566548, -7.656076], [33.566221, -7.65555], [33.566089, -7.655307], [33.565979, -7.655045], [33.565925, -7.654788], [33.565913, -7.65463], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_2a9c560dc35fccbdf3cc3e772530a53b = L.polyline(
+                [[33.550972, -7.674645], [33.551275, -7.67478], [33.551286, -7.674749], [33.551625, -7.674909], [33.552293, -7.675231], [33.552219, -7.675445], [33.552943, -7.675781], [33.553324, -7.675961], [33.553576, -7.67527], [33.55365, -7.675122], [33.553764, -7.674972], [33.553916, -7.674874], [33.554009, -7.674834], [33.554258, -7.674791], [33.554494, -7.674765], [33.554904, -7.674725], [33.55547, -7.674664], [33.555668, -7.674647], [33.5566, -7.674538], [33.55671, -7.674501], [33.556804, -7.674426], [33.557309, -7.673914], [33.557429, -7.673878], [33.557578, -7.673755], [33.558175, -7.673109], [33.55832, -7.672998], [33.558397, -7.672962], [33.558709, -7.672833], [33.559136, -7.672749], [33.559504, -7.672789], [33.559633, -7.672833], [33.560321, -7.673089], [33.560658, -7.671858], [33.56113, -7.670295], [33.561168, -7.670185], [33.561408, -7.669526], [33.561509, -7.669254], [33.561548, -7.669151], [33.561586, -7.669059], [33.561626, -7.668969], [33.561727, -7.668738], [33.561765, -7.668649], [33.561997, -7.668077], [33.562306, -7.667353], [33.562599, -7.666611], [33.562981, -7.66565], [33.563427, -7.664516], [33.563465, -7.66442], [33.564248, -7.662434], [33.565148, -7.66004], [33.565274, -7.659739], [33.565367, -7.659535], [33.565997, -7.658424], [33.566678, -7.657241], [33.566916, -7.656898], [33.566886, -7.656838], [33.566876, -7.656768], [33.566889, -7.656699], [33.566923, -7.65664], [33.566807, -7.656442], [33.566548, -7.656076], [33.566221, -7.65555], [33.566089, -7.655307], [33.565979, -7.655045], [33.565925, -7.654788], [33.565913, -7.65463], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_fddd434b8589ea05077d513e3987fc1b = L.polyline(
+                [[33.550984, -7.669105], [33.551222, -7.668524], [33.551256, -7.668438], [33.552002, -7.666586], [33.552162, -7.666245], [33.55234, -7.665917], [33.552602, -7.665444], [33.552568, -7.665418], [33.552495, -7.665297], [33.552482, -7.665198], [33.552495, -7.665115], [33.552534, -7.665035], [33.552593, -7.664976], [33.552696, -7.664941], [33.552803, -7.664963], [33.553298, -7.664747], [33.553319, -7.664671], [33.553357, -7.664619], [33.553668, -7.664474], [33.554383, -7.664162], [33.555161, -7.663819], [33.556298, -7.663286], [33.557008, -7.662954], [33.557646, -7.662666], [33.557739, -7.66266], [33.557829, -7.662692], [33.55804, -7.6626], [33.557501, -7.660896], [33.557578, -7.660862], [33.558715, -7.660359], [33.55928, -7.66007], [33.559381, -7.659985], [33.559439, -7.659854], [33.559441, -7.659706], [33.558914, -7.657664], [33.558923, -7.657581], [33.558953, -7.657505], [33.559265, -7.657114], [33.559216, -7.657028], [33.559284, -7.656968], [33.559354, -7.65691], [33.560593, -7.656094], [33.561545, -7.655429], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_cfe10743daea6d208a3e397a53da53cf = L.polyline(
+                [[33.550106, -7.638135], [33.549957, -7.638784], [33.549713, -7.638771], [33.54946, -7.638738], [33.548654, -7.638578], [33.547992, -7.638343], [33.547673, -7.639213], [33.547413, -7.639856], [33.547364, -7.640001], [33.547296, -7.640259], [33.547062, -7.640923], [33.547014, -7.641117], [33.546998, -7.641347], [33.547041, -7.641638], [33.547394, -7.64274], [33.547534, -7.643195], [33.547653, -7.643475], [33.547817, -7.643955], [33.547899, -7.644147], [33.54808, -7.64445], [33.548168, -7.644559], [33.548371, -7.644737], [33.548475, -7.644801], [33.548669, -7.64489], [33.548864, -7.644928], [33.549078, -7.644921], [33.549698, -7.644824], [33.549844, -7.644828], [33.550081, -7.644892], [33.550238, -7.644981], [33.550429, -7.64512], [33.55092, -7.645636], [33.55116, -7.645886], [33.552594, -7.647387], [33.552653, -7.64745], [33.552955, -7.647766], [33.553566, -7.648404], [33.553788, -7.648636], [33.554977, -7.649878], [33.555323, -7.65024], [33.555409, -7.650312], [33.555554, -7.650383], [33.55564, -7.650365], [33.555726, -7.650385], [33.5558, -7.650441], [33.555852, -7.650525], [33.555874, -7.650614], [33.55586, -7.650751], [33.55616, -7.651132], [33.556453, -7.65159], [33.556599, -7.651894], [33.556818, -7.652432], [33.557024, -7.652871], [33.557072, -7.652972], [33.557267, -7.653405], [33.557561, -7.653969], [33.557947, -7.654662], [33.558388, -7.655411], [33.559119, -7.65668], [33.559284, -7.656968], [33.559354, -7.65691], [33.560593, -7.656094], [33.561545, -7.655429], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_5209a372e9b4f97ab047383975e8db95 = L.polyline(
+                [[33.557879, -7.618439], [33.557834, -7.61955], [33.557808, -7.620834], [33.557924, -7.620846], [33.558001, -7.620911], [33.558034, -7.621022], [33.558016, -7.621116], [33.557967, -7.621186], [33.557895, -7.621217], [33.557796, -7.621219], [33.557765, -7.62207], [33.557748, -7.622664], [33.557666, -7.623125], [33.5576, -7.623369], [33.557531, -7.623539], [33.557432, -7.623758], [33.557437, -7.623856], [33.557335, -7.624197], [33.557267, -7.624402], [33.557274, -7.624419], [33.557278, -7.624475], [33.557249, -7.62453], [33.557224, -7.624547], [33.557156, -7.624722], [33.556495, -7.626926], [33.556465, -7.627165], [33.556484, -7.627227], [33.556483, -7.627293], [33.55646, -7.627353], [33.55642, -7.627398], [33.556369, -7.627422], [33.556292, -7.62763], [33.556174, -7.628051], [33.556118, -7.628259], [33.55561, -7.629975], [33.555583, -7.630185], [33.555583, -7.630367], [33.555602, -7.630524], [33.555831, -7.631312], [33.556476, -7.633212], [33.55654, -7.633393], [33.556798, -7.634129], [33.55698, -7.634622], [33.557065, -7.634806], [33.557153, -7.63496], [33.557388, -7.6353], [33.558021, -7.636215], [33.558561, -7.636998], [33.559174, -7.63787], [33.560048, -7.639128], [33.560469, -7.639714], [33.560715, -7.640083], [33.561264, -7.640873], [33.561807, -7.641663], [33.562282, -7.642437], [33.562746, -7.643164], [33.563518, -7.644411], [33.563621, -7.644575], [33.563891, -7.644993], [33.564451, -7.645864], [33.564651, -7.646179], [33.565009, -7.646731], [33.565099, -7.646903], [33.565121, -7.647074], [33.565103, -7.647284], [33.565057, -7.647489], [33.565026, -7.64768], [33.565053, -7.647898], [33.565232, -7.648413], [33.565691, -7.649629], [33.56591, -7.650205], [33.565975, -7.650406], [33.566037, -7.6507], [33.566052, -7.650857], [33.566055, -7.651361], [33.566042, -7.652798], [33.566034, -7.654174], [33.566032, -7.654231], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_5a06975328645a9cdc2cbf903bbc81fd = L.polyline(
+                [[33.522674, -7.665135], [33.523006, -7.66503], [33.523395, -7.664943], [33.523706, -7.664899], [33.523922, -7.66489], [33.524446, -7.664919], [33.524651, -7.664947], [33.527097, -7.665371], [33.527314, -7.665411], [33.52821, -7.665536], [33.52853, -7.665551], [33.528912, -7.665525], [33.529182, -7.665487], [33.530263, -7.665337], [33.531145, -7.665202], [33.531425, -7.665158], [33.532778, -7.664849], [33.534753, -7.664335], [33.536173, -7.663936], [33.537304, -7.66364], [33.537494, -7.663591], [33.537552, -7.663586], [33.53763, -7.663434], [33.53767, -7.663354], [33.538024, -7.662766], [33.538203, -7.662443], [33.538312, -7.662362], [33.538483, -7.662303], [33.538549, -7.662292], [33.538649, -7.662281], [33.538727, -7.6623], [33.539087, -7.662707], [33.539269, -7.66292], [33.539378, -7.663005], [33.539499, -7.66308], [33.539631, -7.663119], [33.539829, -7.663121], [33.540405, -7.663003], [33.540814, -7.662963], [33.541318, -7.662869], [33.541703, -7.662803], [33.542092, -7.662729], [33.542433, -7.66271], [33.542724, -7.662792], [33.542848, -7.662853], [33.542985, -7.662949], [33.543223, -7.663178], [33.543393, -7.663407], [33.544875, -7.662114], [33.544888, -7.661905], [33.544878, -7.661781], [33.544786, -7.661127], [33.544786, -7.661025], [33.544824, -7.660742], [33.545058, -7.659869], [33.545414, -7.658544], [33.545568, -7.658004], [33.545621, -7.657739], [33.54605, -7.656258], [33.546063, -7.656098], [33.54605, -7.656004], [33.546182, -7.656052], [33.546181, -7.655955], [33.546158, -7.655865], [33.546194, -7.655674], [33.546472, -7.654964], [33.546597, -7.654716], [33.546753, -7.654425], [33.546884, -7.654218], [33.547113, -7.653905], [33.547493, -7.653469], [33.547756, -7.653225], [33.547953, -7.653068], [33.548515, -7.652711], [33.548806, -7.652564], [33.549185, -7.65242], [33.549226, -7.652363], [33.549268, -7.652358], [33.549305, -7.652384], [33.549624, -7.652272], [33.550347, -7.652024], [33.551103, -7.651792], [33.551145, -7.651779], [33.551256, -7.651745], [33.552098, -7.651489], [33.552181, -7.651467], [33.555408, -7.650579], [33.555418, -7.650544], [33.555458, -7.650464], [33.555554, -7.650383], [33.55564, -7.650365], [33.555726, -7.650385], [33.5558, -7.650441], [33.555852, -7.650525], [33.555874, -7.650614], [33.55586, -7.650751], [33.55616, -7.651132], [33.556453, -7.65159], [33.556599, -7.651894], [33.556818, -7.652432], [33.557024, -7.652871], [33.557072, -7.652972], [33.557267, -7.653405], [33.557561, -7.653969], [33.557947, -7.654662], [33.558388, -7.655411], [33.559119, -7.65668], [33.559284, -7.656968], [33.559354, -7.65691], [33.560593, -7.656094], [33.561545, -7.655429], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_7df43e7806ad02db011f2a4ca41db483 = L.polyline(
+                [[33.523968, -7.646494], [33.524067, -7.647052], [33.524082, -7.647133], [33.524176, -7.647693], [33.524293, -7.648361], [33.524491, -7.649384], [33.524636, -7.649943], [33.524722, -7.650217], [33.524867, -7.650591], [33.524962, -7.650739], [33.525121, -7.650821], [33.525365, -7.650874], [33.526068, -7.650397], [33.526786, -7.649903], [33.527393, -7.64955], [33.527842, -7.649337], [33.528265, -7.649152], [33.528824, -7.648961], [33.529805, -7.648656], [33.530675, -7.648395], [33.531174, -7.648186], [33.531526, -7.648003], [33.531605, -7.647939], [33.531746, -7.64777], [33.531762, -7.647689], [33.531798, -7.647618], [33.531903, -7.647533], [33.532028, -7.64753], [33.53212, -7.647588], [33.532166, -7.647654], [33.532192, -7.647734], [33.532196, -7.647819], [33.53219, -7.647859], [33.532168, -7.647925], [33.5321, -7.648015], [33.532086, -7.648102], [33.532091, -7.648217], [33.532348, -7.649247], [33.532369, -7.649339], [33.53268, -7.65042], [33.533032, -7.65155], [33.53308, -7.651708], [33.533562, -7.653354], [33.533892, -7.654368], [33.534665, -7.656143], [33.534996, -7.656832], [33.536499, -7.659541], [33.536612, -7.659782], [33.536768, -7.660065], [33.536922, -7.660295], [33.537209, -7.660653], [33.538891, -7.662552], [33.5391, -7.662822], [33.539306, -7.663036], [33.539476, -7.663134], [33.539583, -7.663168], [33.539688, -7.663187], [33.539905, -7.663171], [33.540418, -7.663074], [33.540814, -7.662963], [33.541318, -7.662869], [33.541703, -7.662803], [33.542092, -7.662729], [33.542433, -7.66271], [33.542724, -7.662792], [33.542848, -7.662853], [33.542985, -7.662949], [33.543223, -7.663178], [33.543393, -7.663407], [33.544875, -7.662114], [33.544888, -7.661905], [33.544878, -7.661781], [33.544786, -7.661127], [33.544786, -7.661025], [33.544824, -7.660742], [33.545058, -7.659869], [33.545414, -7.658544], [33.545568, -7.658004], [33.545621, -7.657739], [33.54605, -7.656258], [33.546063, -7.656098], [33.54605, -7.656004], [33.546182, -7.656052], [33.546181, -7.655955], [33.546158, -7.655865], [33.546194, -7.655674], [33.546472, -7.654964], [33.546597, -7.654716], [33.546753, -7.654425], [33.546884, -7.654218], [33.547113, -7.653905], [33.547493, -7.653469], [33.547756, -7.653225], [33.547953, -7.653068], [33.548515, -7.652711], [33.548806, -7.652564], [33.549185, -7.65242], [33.549226, -7.652363], [33.549268, -7.652358], [33.549305, -7.652384], [33.549624, -7.652272], [33.550347, -7.652024], [33.551103, -7.651792], [33.551145, -7.651779], [33.551256, -7.651745], [33.552098, -7.651489], [33.552181, -7.651467], [33.555408, -7.650579], [33.555418, -7.650544], [33.555458, -7.650464], [33.555554, -7.650383], [33.55564, -7.650365], [33.555726, -7.650385], [33.5558, -7.650441], [33.555852, -7.650525], [33.555874, -7.650614], [33.55586, -7.650751], [33.55616, -7.651132], [33.556453, -7.65159], [33.556599, -7.651894], [33.556818, -7.652432], [33.557024, -7.652871], [33.557072, -7.652972], [33.557267, -7.653405], [33.557561, -7.653969], [33.557947, -7.654662], [33.558388, -7.655411], [33.559119, -7.65668], [33.559284, -7.656968], [33.559354, -7.65691], [33.560593, -7.656094], [33.561545, -7.655429], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "lightred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "lightred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_90f118a7c636a99b2070e0d9eccb3381 = L.polyline(
+                [[33.526386, -7.634436], [33.52632, -7.634333], [33.526252, -7.634261], [33.526026, -7.63409], [33.525569, -7.633803], [33.525181, -7.633521], [33.524909, -7.633305], [33.524666, -7.631917], [33.524605, -7.631504], [33.523322, -7.631756], [33.523049, -7.6318], [33.522695, -7.631877], [33.522641, -7.631886], [33.52212, -7.632004], [33.522026, -7.632021], [33.521822, -7.632057], [33.521584, -7.632053], [33.521313, -7.631992], [33.520693, -7.631766], [33.520438, -7.631752], [33.520208, -7.63182], [33.520091, -7.631891], [33.519967, -7.63197], [33.51976, -7.632165], [33.519735, -7.632249], [33.519688, -7.632318], [33.519717, -7.632531], [33.519736, -7.632587], [33.519803, -7.632676], [33.520742, -7.633479], [33.521564, -7.633993], [33.523859, -7.634888], [33.525967, -7.635627], [33.527298, -7.636072], [33.52879, -7.636614], [33.529413, -7.636815], [33.531397, -7.63752], [33.532497, -7.637882], [33.532807, -7.637995], [33.533497, -7.638249], [33.533818, -7.638311], [33.533995, -7.638367], [33.534225, -7.638503], [33.536633, -7.639323], [33.544186, -7.641976], [33.544374, -7.642045], [33.545989, -7.642592], [33.546323, -7.642721], [33.546539, -7.642787], [33.547342, -7.643082], [33.54795, -7.643301], [33.54878, -7.643597], [33.54925, -7.643695], [33.549833, -7.643783], [33.551262, -7.643884], [33.551709, -7.643914], [33.551948, -7.643931], [33.55512, -7.644186], [33.557749, -7.644417], [33.558284, -7.644466], [33.559926, -7.644573], [33.562987, -7.644431], [33.563383, -7.64442], [33.563518, -7.644411], [33.563621, -7.644575], [33.563891, -7.644993], [33.564451, -7.645864], [33.564651, -7.646179], [33.565009, -7.646731], [33.565099, -7.646903], [33.565121, -7.647074], [33.565103, -7.647284], [33.565057, -7.647489], [33.565026, -7.64768], [33.565053, -7.647898], [33.565232, -7.648413], [33.565691, -7.649629], [33.56591, -7.650205], [33.565975, -7.650406], [33.566037, -7.6507], [33.566052, -7.650857], [33.566055, -7.651361], [33.566042, -7.652798], [33.566034, -7.654174], [33.566032, -7.654231], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "beige", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "beige", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_2df1f83f741b39194074b85ff867d1cd = L.polyline(
+                [[33.530903, -7.623905], [33.530618, -7.623992], [33.530527, -7.624045], [33.53053, -7.624734], [33.530602, -7.626155], [33.530722, -7.626775], [33.530733, -7.626833], [33.530955, -7.628074], [33.531132, -7.629377], [33.53118, -7.62944], [33.531247, -7.629491], [33.531388, -7.629546], [33.531486, -7.629596], [33.531554, -7.629665], [33.531649, -7.629833], [33.531704, -7.629879], [33.533438, -7.629604], [33.533976, -7.629576], [33.5345, -7.629608], [33.535163, -7.629809], [33.535449, -7.629922], [33.535955, -7.630102], [33.537278, -7.630541], [33.537541, -7.630619], [33.538081, -7.630844], [33.538274, -7.630915], [33.538595, -7.63097], [33.538885, -7.630973], [33.539006, -7.630952], [33.539222, -7.630898], [33.540565, -7.630406], [33.540645, -7.630342], [33.540696, -7.630337], [33.540754, -7.630359], [33.540792, -7.630396], [33.540822, -7.630457], [33.540821, -7.630572], [33.54079, -7.630633], [33.540732, -7.630679], [33.540707, -7.63119], [33.540675, -7.633981], [33.540656, -7.634816], [33.54064, -7.635764], [33.540625, -7.636861], [33.540568, -7.638889], [33.540559, -7.639076], [33.540541, -7.63926], [33.540499, -7.639427], [33.540464, -7.639507], [33.540353, -7.639683], [33.540272, -7.639761], [33.540177, -7.639818], [33.539918, -7.639938], [33.539824, -7.640025], [33.539789, -7.640143], [33.539791, -7.640259], [33.53983, -7.640315], [33.539975, -7.640393], [33.540284, -7.640497], [33.540547, -7.64059], [33.540724, -7.640624], [33.540802, -7.640595], [33.540849, -7.640593], [33.540939, -7.640623], [33.54103, -7.64072], [33.54104, -7.64074], [33.541304, -7.640869], [33.54412, -7.641866], [33.544255, -7.641927], [33.544338, -7.64199], [33.544374, -7.642045], [33.545989, -7.642592], [33.546323, -7.642721], [33.546539, -7.642787], [33.547342, -7.643082], [33.54795, -7.643301], [33.54878, -7.643597], [33.54925, -7.643695], [33.549833, -7.643783], [33.551262, -7.643884], [33.551709, -7.643914], [33.551948, -7.643931], [33.55512, -7.644186], [33.557749, -7.644417], [33.558284, -7.644466], [33.559926, -7.644573], [33.562987, -7.644431], [33.563383, -7.64442], [33.563518, -7.644411], [33.563621, -7.644575], [33.563891, -7.644993], [33.564451, -7.645864], [33.564651, -7.646179], [33.565009, -7.646731], [33.565099, -7.646903], [33.565121, -7.647074], [33.565103, -7.647284], [33.565057, -7.647489], [33.565026, -7.64768], [33.565053, -7.647898], [33.565232, -7.648413], [33.565691, -7.649629], [33.56591, -7.650205], [33.565975, -7.650406], [33.566037, -7.6507], [33.566052, -7.650857], [33.566055, -7.651361], [33.566042, -7.652798], [33.566034, -7.654174], [33.566032, -7.654231], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_7cdcde8747619f412dbd9ce9d040b18b = L.polyline(
+                [[33.531354, -7.648093], [33.531526, -7.648003], [33.531605, -7.647939], [33.531746, -7.64777], [33.531762, -7.647689], [33.531798, -7.647618], [33.531903, -7.647533], [33.532028, -7.64753], [33.53212, -7.647588], [33.532166, -7.647654], [33.532192, -7.647734], [33.532196, -7.647819], [33.53219, -7.647859], [33.532168, -7.647925], [33.5321, -7.648015], [33.532086, -7.648102], [33.532091, -7.648217], [33.532348, -7.649247], [33.532369, -7.649339], [33.53268, -7.65042], [33.533032, -7.65155], [33.53308, -7.651708], [33.533562, -7.653354], [33.533892, -7.654368], [33.534665, -7.656143], [33.534996, -7.656832], [33.536499, -7.659541], [33.536612, -7.659782], [33.536768, -7.660065], [33.536922, -7.660295], [33.537209, -7.660653], [33.538891, -7.662552], [33.5391, -7.662822], [33.539306, -7.663036], [33.539476, -7.663134], [33.539583, -7.663168], [33.539688, -7.663187], [33.539905, -7.663171], [33.540418, -7.663074], [33.540814, -7.662963], [33.541318, -7.662869], [33.541703, -7.662803], [33.542092, -7.662729], [33.542433, -7.66271], [33.542724, -7.662792], [33.542848, -7.662853], [33.542985, -7.662949], [33.543223, -7.663178], [33.543393, -7.663407], [33.544875, -7.662114], [33.544888, -7.661905], [33.544878, -7.661781], [33.544786, -7.661127], [33.544786, -7.661025], [33.544824, -7.660742], [33.545058, -7.659869], [33.545414, -7.658544], [33.545568, -7.658004], [33.545621, -7.657739], [33.54605, -7.656258], [33.546063, -7.656098], [33.54605, -7.656004], [33.546182, -7.656052], [33.546181, -7.655955], [33.546158, -7.655865], [33.546194, -7.655674], [33.546472, -7.654964], [33.546597, -7.654716], [33.546753, -7.654425], [33.546884, -7.654218], [33.547113, -7.653905], [33.547493, -7.653469], [33.547756, -7.653225], [33.547953, -7.653068], [33.548515, -7.652711], [33.548806, -7.652564], [33.549185, -7.65242], [33.549226, -7.652363], [33.549268, -7.652358], [33.549305, -7.652384], [33.549624, -7.652272], [33.550347, -7.652024], [33.551103, -7.651792], [33.551145, -7.651779], [33.551256, -7.651745], [33.552098, -7.651489], [33.552181, -7.651467], [33.555408, -7.650579], [33.555418, -7.650544], [33.555458, -7.650464], [33.555554, -7.650383], [33.55564, -7.650365], [33.555726, -7.650385], [33.5558, -7.650441], [33.555852, -7.650525], [33.555874, -7.650614], [33.55586, -7.650751], [33.55616, -7.651132], [33.556453, -7.65159], [33.556599, -7.651894], [33.556818, -7.652432], [33.557024, -7.652871], [33.557072, -7.652972], [33.557267, -7.653405], [33.557561, -7.653969], [33.557947, -7.654662], [33.558388, -7.655411], [33.559119, -7.65668], [33.559284, -7.656968], [33.559354, -7.65691], [33.560593, -7.656094], [33.561545, -7.655429], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_0bc98fc132904eb5d7d0a894f7eecf3c = L.polyline(
+                [[33.540015, -7.625459], [33.540025, -7.625804], [33.540064, -7.625908], [33.540143, -7.625929], [33.540856, -7.625818], [33.541253, -7.626679], [33.541327, -7.626834], [33.541344, -7.626829], [33.541384, -7.626828], [33.541456, -7.626867], [33.541501, -7.626971], [33.541495, -7.627039], [33.541467, -7.627098], [33.541437, -7.627127], [33.54139, -7.627149], [33.541082, -7.628733], [33.540754, -7.630359], [33.540792, -7.630396], [33.540822, -7.630457], [33.540821, -7.630572], [33.54079, -7.630633], [33.540732, -7.630679], [33.540707, -7.63119], [33.540675, -7.633981], [33.540656, -7.634816], [33.54064, -7.635764], [33.540625, -7.636861], [33.540568, -7.638889], [33.540559, -7.639076], [33.540541, -7.63926], [33.540499, -7.639427], [33.540464, -7.639507], [33.540353, -7.639683], [33.540272, -7.639761], [33.540177, -7.639818], [33.539918, -7.639938], [33.539824, -7.640025], [33.539789, -7.640143], [33.539791, -7.640259], [33.53983, -7.640315], [33.539975, -7.640393], [33.540284, -7.640497], [33.540547, -7.64059], [33.540724, -7.640624], [33.540802, -7.640595], [33.540849, -7.640593], [33.540939, -7.640623], [33.54103, -7.64072], [33.54104, -7.64074], [33.541304, -7.640869], [33.54412, -7.641866], [33.544255, -7.641927], [33.544338, -7.64199], [33.544374, -7.642045], [33.545989, -7.642592], [33.546323, -7.642721], [33.546539, -7.642787], [33.547342, -7.643082], [33.54795, -7.643301], [33.54878, -7.643597], [33.54925, -7.643695], [33.549833, -7.643783], [33.551262, -7.643884], [33.551709, -7.643914], [33.551948, -7.643931], [33.55512, -7.644186], [33.557749, -7.644417], [33.558284, -7.644466], [33.559926, -7.644573], [33.562987, -7.644431], [33.563383, -7.64442], [33.563518, -7.644411], [33.563621, -7.644575], [33.563891, -7.644993], [33.564451, -7.645864], [33.564651, -7.646179], [33.565009, -7.646731], [33.565099, -7.646903], [33.565121, -7.647074], [33.565103, -7.647284], [33.565057, -7.647489], [33.565026, -7.64768], [33.565053, -7.647898], [33.565232, -7.648413], [33.565691, -7.649629], [33.56591, -7.650205], [33.565975, -7.650406], [33.566037, -7.6507], [33.566052, -7.650857], [33.566055, -7.651361], [33.566042, -7.652798], [33.566034, -7.654174], [33.566032, -7.654231], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_04b3afaa8a9502ad2c248f9bb2bdef06 = L.polyline(
+                [[33.588207, -7.644667], [33.588337, -7.645181], [33.588697, -7.646587], [33.588863, -7.647274], [33.589032, -7.647954], [33.589268, -7.648852], [33.589355, -7.649222], [33.589423, -7.64923], [33.589473, -7.649272], [33.5895, -7.649337], [33.589503, -7.649388], [33.589459, -7.649486], [33.589395, -7.649521], [33.589325, -7.649509], [33.589283, -7.649471], [33.589257, -7.649417], [33.587743, -7.64995], [33.58763, -7.649998], [33.587538, -7.649817], [33.587342, -7.649345], [33.587311, -7.649279], [33.587188, -7.64902], [33.587089, -7.648759], [33.587061, -7.648759], [33.587004, -7.648729], [33.586993, -7.648716], [33.586681, -7.648934], [33.586287, -7.649201], [33.584982, -7.650052], [33.584567, -7.650325], [33.584515, -7.650359], [33.583392, -7.651094], [33.582068, -7.651945], [33.581379, -7.652387], [33.58097, -7.652736], [33.580662, -7.653047], [33.580509, -7.653208], [33.580245, -7.653536], [33.579863, -7.65407], [33.579452, -7.654666], [33.578985, -7.655288], [33.579014, -7.655392], [33.579011, -7.655448], [33.578971, -7.655546], [33.578896, -7.655609], [33.57883, -7.655622], [33.578767, -7.655607], [33.578693, -7.655535], [33.578656, -7.655431], [33.578667, -7.655327], [33.576849, -7.653391], [33.575638, -7.652065], [33.574029, -7.650251], [33.573919, -7.650127], [33.572684, -7.648773], [33.572037, -7.648033], [33.571945, -7.648036], [33.571267, -7.649261], [33.570771, -7.650093], [33.570441, -7.650631], [33.570066, -7.651338], [33.569994, -7.651501], [33.569314, -7.653057], [33.568986, -7.653646], [33.568138, -7.654974], [33.567375, -7.656241], [33.567282, -7.656383], [33.567214, -7.656536], [33.567173, -7.656692], [33.567186, -7.65674], [33.567179, -7.656839], [33.56716, -7.656883], [33.567095, -7.656945], [33.566995, -7.656957], [33.566957, -7.656939], [33.566916, -7.656898], [33.566886, -7.656838], [33.566876, -7.656768], [33.566889, -7.656699], [33.566923, -7.65664], [33.566807, -7.656442], [33.566548, -7.656076], [33.566221, -7.65555], [33.566089, -7.655307], [33.565979, -7.655045], [33.565925, -7.654788], [33.565913, -7.65463], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_ca81ecb0cd8377420f870431d70396b2 = L.polyline(
+                [[33.585745, -7.655623], [33.585056, -7.656008], [33.584186, -7.656454], [33.583916, -7.65705], [33.583778, -7.65743], [33.583726, -7.657572], [33.583504, -7.658229], [33.58343, -7.658454], [33.583094, -7.65941], [33.582743, -7.66041], [33.58244, -7.661216], [33.582402, -7.661343], [33.582448, -7.66144], [33.58245, -7.661551], [33.582401, -7.661656], [33.582346, -7.661702], [33.582265, -7.661722], [33.582229, -7.661717], [33.582169, -7.661687], [33.582122, -7.661634], [33.582094, -7.661572], [33.582084, -7.661503], [33.582112, -7.661381], [33.582147, -7.661332], [33.582142, -7.661035], [33.582092, -7.660876], [33.580092, -7.657023], [33.579983, -7.656843], [33.579674, -7.656396], [33.579331, -7.65599], [33.579035, -7.655686], [33.578896, -7.655609], [33.57883, -7.655622], [33.578767, -7.655607], [33.578693, -7.655535], [33.578656, -7.655431], [33.578667, -7.655327], [33.576849, -7.653391], [33.575638, -7.652065], [33.574029, -7.650251], [33.573919, -7.650127], [33.572684, -7.648773], [33.572037, -7.648033], [33.571945, -7.648036], [33.571267, -7.649261], [33.570771, -7.650093], [33.570441, -7.650631], [33.570066, -7.651338], [33.569994, -7.651501], [33.569314, -7.653057], [33.568986, -7.653646], [33.568138, -7.654974], [33.567375, -7.656241], [33.567282, -7.656383], [33.567214, -7.656536], [33.567173, -7.656692], [33.567186, -7.65674], [33.567179, -7.656839], [33.56716, -7.656883], [33.567095, -7.656945], [33.566995, -7.656957], [33.566957, -7.656939], [33.566916, -7.656898], [33.566886, -7.656838], [33.566876, -7.656768], [33.566889, -7.656699], [33.566923, -7.65664], [33.566807, -7.656442], [33.566548, -7.656076], [33.566221, -7.65555], [33.566089, -7.655307], [33.565979, -7.655045], [33.565925, -7.654788], [33.565913, -7.65463], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+    
+            var poly_line_d5c6b465843404a565881ce40da8eb4a = L.polyline(
+                [[33.586357, -7.663963], [33.586247, -7.664143], [33.585884, -7.664085], [33.585695, -7.664082], [33.585399, -7.664124], [33.58501, -7.664247], [33.584889, -7.664401], [33.584705, -7.664664], [33.584369, -7.665081], [33.583822, -7.664034], [33.583353, -7.663149], [33.582993, -7.662398], [33.582796, -7.662144], [33.582601, -7.661913], [33.582401, -7.661656], [33.582346, -7.661702], [33.582265, -7.661722], [33.582229, -7.661717], [33.582169, -7.661687], [33.582122, -7.661634], [33.582094, -7.661572], [33.582084, -7.661503], [33.582112, -7.661381], [33.582147, -7.661332], [33.582142, -7.661035], [33.582092, -7.660876], [33.580092, -7.657023], [33.579983, -7.656843], [33.579674, -7.656396], [33.579331, -7.65599], [33.579035, -7.655686], [33.578896, -7.655609], [33.57883, -7.655622], [33.578767, -7.655607], [33.578693, -7.655535], [33.578656, -7.655431], [33.578667, -7.655327], [33.576849, -7.653391], [33.575638, -7.652065], [33.574029, -7.650251], [33.573919, -7.650127], [33.572684, -7.648773], [33.572037, -7.648033], [33.571945, -7.648036], [33.571267, -7.649261], [33.570771, -7.650093], [33.570441, -7.650631], [33.570066, -7.651338], [33.569994, -7.651501], [33.569314, -7.653057], [33.568986, -7.653646], [33.568138, -7.654974], [33.567375, -7.656241], [33.567282, -7.656383], [33.567214, -7.656536], [33.567173, -7.656692], [33.567186, -7.65674], [33.567179, -7.656839], [33.56716, -7.656883], [33.567095, -7.656945], [33.566995, -7.656957], [33.566957, -7.656939], [33.566916, -7.656898], [33.566886, -7.656838], [33.566876, -7.656768], [33.566889, -7.656699], [33.566923, -7.65664], [33.566807, -7.656442], [33.566548, -7.656076], [33.566221, -7.65555], [33.566089, -7.655307], [33.565979, -7.655045], [33.565925, -7.654788], [33.565913, -7.65463], [33.565917, -7.65423], [33.56467, -7.654412], [33.563905, -7.654489], [33.562901, -7.654646], [33.562835, -7.654673], [33.562801, -7.654586], [33.562866, -7.65455], [33.564043, -7.654364], [33.564798, -7.654295], [33.565429, -7.654206]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_36c0be6904d1aef4b3be62d038b56bb1);
+        
+</script>
+</html>
